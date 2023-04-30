@@ -1,0 +1,19 @@
+package com.example.androidclass2;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class AccessLocationPermision extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_access_location_permision);
+    }
+
+}

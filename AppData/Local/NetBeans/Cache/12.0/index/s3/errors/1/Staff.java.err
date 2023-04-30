@@ -1,0 +1,20 @@
+ERROR:12:constructor Recruit in class Recruit<A,B,C,D,E> cannot be applied to given types;\n  required\d java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object\n  found\d    no arguments\n  reason\d actual and formal argument lists differ in length
+ERROR:17:employee has private access in Recruit
+ERROR:17:incompatible types\d java.lang.String cannot be converted to A
+ERROR:20:jobTitle has private access in Recruit
+ERROR:20:incompatible types\d java.lang.String cannot be converted to B
+ERROR:23:employeeID has private access in Recruit
+ERROR:23:incompatible types\d int cannot be converted to C
+ERROR:26:age has private access in Recruit
+ERROR:26:incompatible types\d int cannot be converted to D
+ERROR:28:employee has private access in Recruit
+ERROR:28:jobTitle has private access in Recruit
+ERROR:28:employeeID has private access in Recruit
+ERROR:28:age has private access in Recruit
+ERROR:34:employee has private access in Recruit
+ERROR:34:incompatible types\d java.lang.String cannot be converted to A
+ERROR:37:employee has private access in Recruit
+ERROR:37:jobTitle has private access in Recruit
+ERROR:37:bad operand types for binary operator '+'\n  first type\d  A\n  second type\d B
+ERROR:37:employeeID has private access in Recruit
+ERROR:42:cannot find symbol\n  symbol\d   method setisManagement(boolean)\n  location\d class Staff

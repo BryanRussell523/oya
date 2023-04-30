@@ -1,0 +1,469 @@
+{
+	"Credentials": "fed_id:57964910-4bd8-11ed-a3ab-b8ca3a7184a8",
+	"UserAlias": "911b778",
+	"MainMenuSectionsPendingToVisit": [
+		{
+			"mainMenuSection": "Clubs"
+		}
+	],
+	"LastVisitedMainMenuSection": {
+		"mainMenuSection": "Career"
+	},
+	"CareerSeasonsPendingToVisit": [],
+	"CareerSeasonsPendingToScroll": [],
+	"LastChaptersVisitedSeasonId": 76,
+	"CareerEventsPlayedAndNotCompleted": [
+		52,
+		53,
+		924,
+		54,
+		923
+	],
+	"MultiplayerSeriesLastRaceTokensPendingToSync": [],
+	"MultiplayerSeriesPendingVisited": [
+		{
+			"first": "f5337766-4551-11ed-9788-b8ca3a634708",
+			"second": "2022-12-01 09:30:00Z"
+		},
+		{
+			"first": "2142c71c-4552-11ed-855f-b8ca3a60b3cc",
+			"second": "2022-11-24 10:00:00Z"
+		},
+		{
+			"first": "405b5b78-4552-11ed-8561-b8ca3a60b3cc",
+			"second": "2022-12-01 10:00:00Z"
+		}
+	],
+	"LastSeenGarageLevelInGachaShop": 13,
+	"VisitedTimeLimitedBoxes": [],
+	"VisitedTimeLimitedEvents": [],
+	"VisitedBundles": [
+		"Special_Event_Pack_10",
+		"Special_Event_Pack_11",
+		"Special_Event_Pack_15",
+		"Special_Event_Pack_20",
+		"Special_Event_Pack_21",
+		"Special_Event_Pack_22",
+		"Special_Event_Pack_23",
+		"Special_Event_Pack_24",
+		"Special_Event_Pack_3",
+		"Special_Event_Pack_4",
+		"Special_Pack_12"
+	],
+	"VisitedRelayOffers": [],
+	"NewBlueprintNotifications": [
+		10,
+		85,
+		13,
+		45,
+		166,
+		38,
+		43,
+		11,
+		103,
+		39,
+		18,
+		34,
+		14,
+		184,
+		9,
+		66,
+		23,
+		29,
+		22,
+		54,
+		51,
+		101
+	],
+	"NewWildcardBlueprintNotifications": [
+		[],
+		[],
+		[],
+		[],
+		[]
+	],
+	"NewEpicUpgradeItemNotifications": [],
+	"NewUncommonUpgradeItemNotifications": [
+		1
+	],
+	"NewRareUpgradeItemNotifications": [],
+	"CanShowNoClubPopup": false,
+	"CanShowJoinClansPopup": true,
+	"CustomizationPendingUnlockedNotifications": [
+		{
+			"key": 10,
+			"value": [
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false
+			]
+		},
+		{
+			"key": 37,
+			"value": [
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false
+			]
+		},
+		{
+			"key": 14,
+			"value": [
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false
+			]
+		},
+		{
+			"key": 56,
+			"value": [
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false
+			]
+		},
+		{
+			"key": 31,
+			"value": [
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false,
+				false
+			]
+		}
+	],
+	"CarCustomPartPendingUnlockedNotifications": [
+		{
+			"key": 37,
+			"value": [
+				2
+			]
+		}
+	],
+	"CarDecalVisualsPendingUnlockedNotifications": [],
+	"GameLaunchCount": 38,
+	"LastSelectedCar": 165,
+	"eventNotifiedFirstMilestone": "",
+	"eventNotifiedLastMilestone": "",
+	"SoundSettings": {
+		"masterGain": 1.0,
+		"groupVolumes": [
+			1.0,
+			1.0,
+			1.0,
+			1.0,
+			1.0,
+			1.0,
+			0.0
+		]
+	},
+	"isHapticEnabled": true,
+	"lastViewedChatMessageTimestamp": 0,
+	"lastSessionHadClub": false,
+	"joinedClubTimestamp": 0,
+	"lastClubMemberRank": 3,
+	"multiplayerSeriesLastPositionReadFromLeaderboards": [
+		{
+			"key": "48768a68-4551-11ed-977c-b8ca3a634708",
+			"value": {
+				"timestamp": 1668322704,
+				"myPosition": 76583,
+				"firstPositionElo": 1999.9566650390625,
+				"secondPositionElo": 1999.906982421875
+			}
+		},
+		{
+			"key": "2142c71c-4552-11ed-855f-b8ca3a60b3cc",
+			"value": {
+				"timestamp": 1669136227,
+				"myPosition": 31281,
+				"firstPositionElo": 1995.2603759765625,
+				"secondPositionElo": 1991.0030517578125
+			}
+		},
+		{
+			"key": "405b5b78-4552-11ed-8561-b8ca3a60b3cc",
+			"value": {
+				"timestamp": 1669655111,
+				"myPosition": 42856,
+				"firstPositionElo": 1672.158935546875,
+				"secondPositionElo": 1601.11083984375
+			}
+		}
+	],
+	"tleCachedData": [
+		{
+			"calendarEventId": "1cebc6f2-5fc2-11ed-a8af-b8ca3a60b3cc",
+			"value": {
+				"timestamp": 0,
+				"bestTimeInMicroseconds": 0,
+				"leaderboardPosition": 0,
+				"leaderboardEntryCount": 0
+			}
+		},
+		{
+			"calendarEventId": "1e476d58-5fc2-11ed-a8af-b8ca3a60b3cc",
+			"value": {
+				"timestamp": 0,
+				"bestTimeInMicroseconds": 0,
+				"leaderboardPosition": 0,
+				"leaderboardEntryCount": 0
+			}
+		},
+		{
+			"calendarEventId": "595104fe-5266-11ed-b7f9-b8ca3a60b3cc",
+			"value": {
+				"timestamp": 1667125632,
+				"bestTimeInMicroseconds": 39428926,
+				"leaderboardPosition": 0,
+				"leaderboardEntryCount": 0
+			}
+		},
+		{
+			"calendarEventId": "674cd12c-604a-11ed-b2cc-b8ca3a634708",
+			"value": {
+				"timestamp": 1668323109,
+				"bestTimeInMicroseconds": 111665305,
+				"leaderboardPosition": 62826,
+				"leaderboardEntryCount": 62826
+			}
+		}
+	],
+	"championshipCachedData": [],
+	"clubWarsEventCachedData": [],
+	"uberCachedData": [],
+	"hasToShowManualTutorialWhenTurningSmartDriveOff": true,
+	"hasToShowSlipStreamPopup": true,
+	"hasToShowTakedownPopup": true,
+	"hasToShowPiggyBankFullPopup": true,
+	"hasToShopPiggyBankFullPopupTierDown": true,
+	"hasToShowContaminationPopup": true,
+	"hasToShowNitroGhostPopup": true,
+	"hasToShowMoneyRunPopup": true,
+	"hasToShowAutodustPopup": false,
+	"hasToShowAssignedEntryPoints": true,
+	"hasToShowAssignedDefenseNodes": true,
+	"showClubWarsDefensePhaseHUBTutorial": true,
+	"showClubWarsDefensePhaseOverviewMapTutorial": true,
+	"showClubWarsDefensePhaseRegionBoardTutorial": true,
+	"showClubWarsAttackPhaseHUBTutorial": true,
+	"showClubWarsAttackPhaseOverviewMapTutorial": true,
+	"showClubWarsAttackPhaseRegionBoardTutorial": true,
+	"hasToShowClubWarsTutorialPopup": true,
+	"lastClubWarsRoundDataSeenInOverviewMapWindow": {
+		"eventId": "",
+		"roundIdx": 255,
+		"phase": 0
+	},
+	"lastCWSectionSelectedCar": 212,
+	"rateThisApplicationStamp": "3.7.5a",
+	"rateThisApplicationStampCountdown": 5,
+	"rateThisApplicationTimestamp": 1667124509,
+	"notifyJoinClubRequests": true,
+	"notifyClubInvites": true,
+	"lastSeenClubRequestIds": [],
+	"lastSeenInvitationForClubIds": [],
+	"lastClubSeasonEvent": "",
+	"latestUsedCarAtEvent": [
+		{
+			"calendarEventId": "595104fe-5266-11ed-b7f9-b8ca3a60b3cc",
+			"value": 14
+		},
+		{
+			"calendarEventId": "674cd12c-604a-11ed-b2cc-b8ca3a634708",
+			"value": 186
+		}
+	],
+	"isNoMoreConditionsPopupActive": [],
+	"lastMPCarUsed": {
+		"first": "405b5b78-4552-11ed-8561-b8ca3a60b3cc",
+		"second": 165
+	},
+	"areNotificationsEnabled": true,
+	"isTokenSpendingThresholdEnable": false,
+	"tokenSpendingThreshold": 0,
+	"isTwinViewEnabled": false,
+	"isRGBLightingEnabled": false,
+	"notificationPermissionFlagsV2": -1,
+	"allowNotificationsPopupDisplayCount": 0,
+	"freePacksReceivedCount": 0,
+	"areNotificationsAllowedOnThisDevice": true,
+	"lastUXProfile": 0,
+	"clubRaceCreateRoomLastSelectedLocationId": 4294967295,
+	"clubRaceCreateRoomLastSelectedEventIdForLocation": [],
+	"clubRaceCreateRoomLastSelectedLaps": 1,
+	"championshipEventSeenIntros": [
+		"66ff38dc-4311-11ed-b7e6-b8ca3a634708"
+	],
+	"championshipEventLastVisitedRoundStage": 2,
+	"championshipEventLastVisitedRoundId": 4294967295,
+	"championshipEventLastVisitedLastSeenLeaderboardPosition": 0,
+	"lastSeenTimeLimitedSpecialRankEvent": "",
+	"seenTimeLimitedSpecialEventIntros": [
+		"1eb9b9dc-430a-11ed-b799-b8ca3a634708",
+		"1439d086-430b-11ed-b7a0-b8ca3a634708"
+	],
+	"autoclaimPopupDisplayCount": 3,
+	"lastAutoclaimPopupDisplayTimeStamp": 1668628333,
+	"lastSeenUberEventHub": "",
+	"lastSeenUberEventIntro": "",
+	"VisitedBundlesInUberEventShop": [],
+	"VisitedTimeLimitedBoxesInUberEventShop": [],
+	"LastLevelSeenInUberEvent": 4294967295,
+	"UberBlackMarketVisited": false,
+	"uberExperience": 0,
+	"storedWhatsNewVersion": "3.7.0",
+	"desiredFPS": 60,
+	"dailyGoalComboState": 0,
+	"dailyTasksState": [
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		4,
+		0
+	],
+	"nextResetTime": "2022-11-17 00:00:26Z",
+	"isCareerRaceFlagPopupActive": true,
+	"isUnderPoweredCarPopupActive": true,
+	"canShowTrackingConsentOnIos": true,
+	"SeasonPassSection.lastWelcomeScreenSeen": 9000,
+	"SeasonPassSection.lastTutorialSeen": 4294967295,
+	"SeasonPassSection.lastAllTiersCompletedScreenSeen": 4294967295,
+	"SeasonPassSection.lastEpisodeStates": [
+		{
+			"key": 9000,
+			"value": [
+				1,
+				0
+			]
+		}
+	],
+	"SeasonPassSection.lastSeenBottomBarNonRewardsUIState": [
+		{
+			"key": 9000,
+			"value": 1
+		}
+	],
+	"MultiplayerChallenges.states": [],
+	"splitScreenState": {
+		"mainWindowState": {
+			"playersCount": 0,
+			"carClass": 3,
+			"useAllCarClasses": false
+		},
+		"carSelectionState": {
+			"carSelectionStates": []
+		},
+		"locationSelectionState": {
+			"selectedLocationId": 4294967295,
+			"locationSelectionStates": [],
+			"lapsCount": 1,
+			"useSlipStreamForAI": false
+		}
+	},
+	"splitScreenUnlockedPopup": false
+}

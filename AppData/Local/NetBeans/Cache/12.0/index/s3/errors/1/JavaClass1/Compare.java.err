@@ -1,0 +1,1 @@
+ERROR:23:cannot find symbol\n  symbol\d   variable b\n  location\d variable wcd of type JavaClass1.WildCardDemo<? extends java.lang.Number>

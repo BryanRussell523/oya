@@ -1,0 +1,2 @@
+JavaClass1.Contacts
+JavaClass1.chatGroup2
