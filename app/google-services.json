@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798383435872",
+    "firebase_url": "https://oya-communicate-default-rtdb.firebaseio.com",
+    "project_id": "oya-communicate",
+    "storage_bucket": "oya-communicate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798383435872:android:a49666a43fdc383c31d305",
+        "android_client_info": {
+          "package_name": "com.example.oya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798383435872-h33ntau2at6uj3ktdpu7np84h1ehfb8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oya",
+            "certificate_hash": "042d9111cbfd50f67801724bedb667b0e4bbcf89"
+          }
+        },
+        {
+          "client_id": "798383435872-0btt98j2li7ir34sbo9q6ithr63erdgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwbBCLQpfq9yB3a0cSbZnVfW6-dG68f2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798383435872-0btt98j2li7ir34sbo9q6ithr63erdgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

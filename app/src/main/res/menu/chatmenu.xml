@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/inchatvideocallicon"
+        android:icon="@drawable/inchatvideocallicon"
+        android:title="Video Call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/inchatcallicon"
+        android:icon="@drawable/inchatcallicon"
+        android:title="Call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action"
+        android:title="Options"
+        android:icon="@drawable/options"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:icon="@drawable/profilepic"
+                android:id="@+id/viewcontact"
+                android:title="View Contact"/>
+            <item
+                android:iconTint="@color/navyblue"
+                android:icon="@drawable/search"
+                android:id="@+id/inchatsearch"
+                android:title="Search"/>
+
+        </menu>
+    </item>
+</menu>
