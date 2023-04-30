@@ -1,0 +1,201 @@
+{
+  "appInfo" : {
+    "build" : "213.7172.25.2113.9123335",
+    "buildDate" : "2022-09-30T03:01:53.809Z[UTC]",
+    "productCode" : "AI",
+    "generated" : "2023-04-30T19:02:34.7146203Z",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.13 11.0.13+0-b1751.21-8125866"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 2147483648,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "Oya",
+    "times" : {
+      "indexingReason" : "On refresh of 6 files",
+      "wasFullIndexing" : false,
+      "totalUpdatingTime" : 1071832500,
+      "indexingTime" : 838379700,
+      "contentLoadingTime" : 44285688,
+      "scanFilesTime" : 132789700,
+      "pushPropertiesTime" : 0,
+      "indexExtensionsTime" : 0,
+      "updatingStart" : "2023-04-30T19:02:33.6438798Z",
+      "updatingEnd" : "2023-04-30T19:02:34.7146203Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 6,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 6,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 0,
+      "numberOfFilesIndexedWithLoadingContent" : 6
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "Properties",
+      "partOfTotalProcessingTime" : {
+        "part" : 1574323100,
+        "total" : 2308424200
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 82166400,
+        "total" : 122427600
+      },
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : 6827,
+      "indexingSpeed" : {
+        "totalBytes" : 6827,
+        "totalTime" : 1574323100
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : 6827,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 1574323100,
+          "total" : 1574323100
+        }
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalProcessingTime" : {
+        "part" : 734101100,
+        "total" : 2308424200
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 40261200,
+        "total" : 122427600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 13,
+      "indexingSpeed" : {
+        "totalBytes" : 13,
+        "totalTime" : 734101100
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 13,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 734101100,
+          "total" : 734101100
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 1990200,
+        "total" : 3675000
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5102,
+      "indexingSpeed" : {
+        "totalBytes" : 5102,
+        "totalTime" : 1990200
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 858100,
+        "total" : 3675000
+      },
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 6840,
+      "indexingSpeed" : {
+        "totalBytes" : 6840,
+        "totalTime" : 858100
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 641300,
+        "total" : 3675000
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5102,
+      "indexingSpeed" : {
+        "totalBytes" : 5102,
+        "totalTime" : 641300
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 185400,
+        "total" : 3675000
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5102,
+      "indexingSpeed" : {
+        "totalBytes" : 5102,
+        "totalTime" : 185400
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "numberOfScannedFiles" : 6,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 6,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 132789700,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfIndexedFiles" : 6,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : 835025400,
+      "contentLoadingTime" : 44285688,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ {
+        "fileName" : "attributes.properties",
+        "processingTime" : 731711200,
+        "indexingTime" : 117700,
+        "contentLoadingTime" : 40421200
+      }, {
+        "fileName" : "a278ab0d[1].xml",
+        "processingTime" : 734101100,
+        "indexingTime" : 45000,
+        "contentLoadingTime" : 40261200
+      }, {
+        "fileName" : "attributes.properties",
+        "processingTime" : 763817600,
+        "indexingTime" : 73400,
+        "contentLoadingTime" : 40306400
+      } ]
+    } ]
+  }
+}
