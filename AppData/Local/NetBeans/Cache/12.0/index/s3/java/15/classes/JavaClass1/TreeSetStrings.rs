@@ -1,2 +1,0 @@
-JavaClass1.classmates
-JavaClass1.TreeSetStrings
