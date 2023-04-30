@@ -1,1 +1,0 @@
-This AdsManager file is used to check if it is first launch
