@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "845764496193",
+    "project_id": "oyaonline-e5fd2",
+    "storage_bucket": "oyaonline-e5fd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845764496193:android:7086ae8453935792a1efc0",
+        "android_client_info": {
+          "package_name": "com.example.oya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845764496193-4i12ot1h89q0jkgpodhg4db11tm8je3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oya",
+            "certificate_hash": "c0bb790b4b4682f793aca56e2e03bcd66a42416a"
+          }
+        },
+        {
+          "client_id": "845764496193-ns21jpnfdqv3tvjku5i30kdk9dsl2koi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfHx1XXMW8FNwNBd-ShOW9hXWohVyiYdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845764496193-ns21jpnfdqv3tvjku5i30kdk9dsl2koi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

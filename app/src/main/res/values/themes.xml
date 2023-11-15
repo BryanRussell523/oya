@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Oya" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/lightblue</item>
+    </style>
+    <!-- Defining that new color in ColorPrimaryDark -->
+    <style name="Theme.Oya" parent="Base.Theme.Oya" />
+
+    <style name="Button.blue" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/lightblue</item>
+    </style>
+
+    <style name="Theme.Oya.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Oya.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Oya.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

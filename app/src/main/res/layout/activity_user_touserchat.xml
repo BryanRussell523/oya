@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/chatbackground"
+    tools:context=".userTouserchat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="0dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/firstrelativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backbuttonofusertouserchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewofusertouserchat"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/nameofspecificchatuser"
+                app:cardCornerRadius="35dp">
+
+                <ImageView
+                    android:id="@+id/usertouserchatimageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/defaultprfilepic"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="229dp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nameofspecificchatuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:drawableEnd="@drawable/moreinfoonuser"
+                android:fontFamily="@font/abeezee"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewofusertouserchat"
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <RelativeLayout
+        android:id="@+id/iconscontainer"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/chatactionbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="310dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/textboxbackground"
+            android:ems="10"
+            android:fontFamily="@font/abeezee"
+            android:hint="Message"
+            android:inputType="text"
+            android:padding="9dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendmessage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/message"
+            android:layout_alignTop="@+id/message"
+            android:layout_alignEnd="@+id/message"
+            android:layout_alignBottom="@+id/message"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/sendmessage" />
+
+        <ImageView
+            android:id="@+id/voicemessage"
+            android:layout_width="55dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginBottom="55dp"
+            app:srcCompat="@drawable/voicemessage" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="55dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="347dp"
+            android:layout_marginBottom="55dp"
+            app:srcCompat="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="68dp"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="4dp"
+
+            android:layout_toRightOf="@+id/gallery"
+            app:srcCompat="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/audio"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/avatar"
+            app:srcCompat="@drawable/audio"
+
+            />
+
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="173dp"
+            android:layout_marginLeft="22dp"
+
+            android:layout_toRightOf="@+id/audio"
+            android:background="@drawable/floatingactionbuttonbackground"
+            app:srcCompat="@drawable/wallet" />
+
+        <ImageView
+            android:id="@+id/contacts"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="19dp"
+
+            android:layout_toRightOf="@+id/wallet"
+            app:srcCompat="@drawable/contact"
+
+            />
+
+        <ImageView
+            android:id="@+id/documents"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="304dp"
+            android:layout_marginLeft="9dp"
+
+            android:layout_toRightOf="@+id/contacts"
+            app:srcCompat="@drawable/document"
+
+            />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="354dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/documents"
+            app:srcCompat="@drawable/location" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
