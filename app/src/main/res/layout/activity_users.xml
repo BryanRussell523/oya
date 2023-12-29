@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/activity_users"
     tools:context=".selectUser">
     <androidx.appcompat.widget.Toolbar
         android:padding="15dp"
@@ -41,12 +42,19 @@
                 android:textColor="@color/white"/>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+    <!--ListView to show all saved contacts-->
+<!--    <ListView-->
+<!--        android:id="@+id/ListView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/toolbar" />-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/usersrecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
-        />
+        android:scrollbars="vertical" />
+
 
 
 </RelativeLayout>

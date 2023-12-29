@@ -1,57 +1,49 @@
 package com.example.oya;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.bumptech.glide.Glide;
-import com.example.oya.Model.User;
 import com.example.oya.Utility.NetworkChangeListener;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class chatViewActivity extends AppCompatActivity {
     TabLayout tablayout;
     TabItem chatstab, callstab, statustab, settingstab;
     ViewPager fragmentcontainer;
+    ImageButton fab;
     PagerAdapter pagerAdapter;
     androidx.appcompat.widget.Toolbar toolbar;
     FirebaseUser firebaseUser;
     DatabaseReference reference;
     LinearLayout layout;
-
+    //NETWORK CHANGE LISTENER
+    NetworkChangeListener networkChangeListener = new NetworkChangeListener();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        //Monitor network change
+        IntentFilter intentFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(networkChangeListener,intentFilter);
+        super.onStart();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-
 
 
         tablayout = findViewById(R.id.tablayout);
@@ -59,6 +51,8 @@ public class chatViewActivity extends AppCompatActivity {
         callstab = findViewById(R.id.callstab);
         statustab = findViewById(R.id.statustab);
         settingstab = findViewById(R.id.settingstab);
+
+
 
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -80,7 +74,6 @@ public class chatViewActivity extends AppCompatActivity {
                     pagerAdapter.notifyDataSetChanged();
                 }
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
             }
@@ -91,25 +84,28 @@ public class chatViewActivity extends AppCompatActivity {
             }
         });
         fragmentcontainer.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tablayout));
+
         }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
             return true;
         }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int itemId = item.getItemId();
-        if (itemId == R.id.switchtopro) {
-            //Create animated splashscreen for switching modes(Chat Mode and Professional Mode)
-            Intent intent = new Intent(chatViewActivity.this,SplashScreenPro.class);
-            startActivity(intent);
-            finish();
+        if (itemId == R.id.quickcamera) {
+            Toast.makeText(this, "Camera", Toast.LENGTH_SHORT).show();
+
             return true;
         }
         if (itemId == R.id.search_bar) {
             Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if (itemId == R.id.groupchat) {
+            Toast.makeText(this, "Group chat", Toast.LENGTH_SHORT).show();
+
             return true;
         }
         return false;
@@ -121,6 +117,12 @@ public class chatViewActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         super.onBackPressed();
+    }
+    //Monitor network change
+    @Override
+    protected void onStop() {
+        unregisterReceiver(networkChangeListener);
+        super.onStop();
     }
 }
 

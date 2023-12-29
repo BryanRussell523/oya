@@ -28,4 +28,20 @@
             android:src="@drawable/statuscamera"/>
 
     </RelativeLayout>
+    <RelativeLayout
+        android:paddingBottom="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|end">
+        <ImageButton
+            android:id="@+id/fab2"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/walletbackground"
+            android:elevation="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/wallet" />
+    </RelativeLayout>
 </RelativeLayout>

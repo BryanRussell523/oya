@@ -10,6 +10,8 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -46,11 +48,11 @@ public class ProfessionalMode extends AppCompatActivity {
         TextView myapptext = findViewById(R.id.myapptext);
         myapptext.setText("Professional Mode");
 
-
         tablayout = findViewById(R.id.tablayout);
         wallettab = findViewById(R.id.wallettab);
         settingstab = findViewById(R.id.settingstab);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
 
         fragmentcontainer = findViewById(R.id.fragmentcontainer);
         pagerAdapter = new PagerAdapterforpromode(getSupportFragmentManager(), tablayout.getTabCount());
@@ -71,26 +73,6 @@ public class ProfessionalMode extends AppCompatActivity {
             }
         });
         fragmentcontainer.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tablayout));
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menuforpro,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int itemId = item.getItemId();
-        if (itemId == R.id.switchtochat){
-            //Create animated splashscreen for switching modes(Chat Mode and Professional Mode)
-            Intent intent = new Intent(ProfessionalMode.this,chatViewActivity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }
-        return false;
     }
     @Override
     public void onBackPressed() {
@@ -113,4 +95,5 @@ public class ProfessionalMode extends AppCompatActivity {
         unregisterReceiver(networkChangeListener);
         super.onStop();
     }
+
 }

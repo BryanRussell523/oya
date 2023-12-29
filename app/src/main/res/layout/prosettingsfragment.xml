@@ -126,6 +126,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/promodeprofilepanel"
         android:id="@+id/logout"
+        android:padding="10dp"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_below="@+id/accountlayout"
@@ -151,5 +152,21 @@
         android:textColor="@color/purple"
         android:textSize="20sp"
         android:textStyle="bold" />
-</RelativeLayout>
 
+    <RelativeLayout
+        android:paddingBottom="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|end">
+
+        <ImageButton
+            android:id="@+id/fab2"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/floatingactionbuttonbackground"
+            android:elevation="10dp"
+            android:src="@drawable/newchat" />
+</RelativeLayout>
+</RelativeLayout>

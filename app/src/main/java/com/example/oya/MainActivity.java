@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
+
                 Intent mainIntent = new Intent(MainActivity.this,SignUp.class);
                 MainActivity.this.startActivity(mainIntent);
                 MainActivity.this.finish();

@@ -8,7 +8,7 @@
     tools:context=".ProfessionalMode">
       <androidx.appcompat.widget.Toolbar
           android:id="@+id/toolbar"
-          android:background="@color/purple"
+          android:background="@color/lightblue"
           android:layout_width="match_parent"
           android:fitsSystemWindows="true"
           android:minHeight="?attr/actionBarSize"
@@ -37,13 +37,13 @@
           android:minHeight="?attr/actionBarSize"
           android:layout_marginBottom="0dp"
           app:tabIndicatorHeight="5dp"
-          app:tabIndicatorColor="@color/lightblue"
+          app:tabIndicatorColor="@color/white"
           app:tabTextColor="@color/white"
-          app:tabSelectedTextAppearance="@color/lightblue"
+          app:tabSelectedTextAppearance="@color/white"
           android:id="@+id/tablayout"
           android:layout_width="match_parent"
           android:layout_height="80dp"
-          android:backgroundTint="@color/purple">
+          android:backgroundTint="@color/lightblue">
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -13,8 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.bumptech.glide.Glide;
-import com.example.oya.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -28,10 +26,10 @@ public class settingsFragment extends Fragment {
     androidx.appcompat.widget.AppCompatButton account;
     androidx.appcompat.widget.AppCompatButton invite;
     androidx.appcompat.widget.AppCompatButton logout;
-    ImageView viewuserimageimageview;
+    ImageView profile_image;
     TextView username;
     FirebaseUser firebaseUser;
-    DatabaseReference reference;
+    DatabaseReference databaseReference;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -39,28 +37,18 @@ public class settingsFragment extends Fragment {
         //return inflater.inflate(R.layout.settingsfragment,null);
 
         username = view.findViewById(R.id.username);
-        viewuserimageimageview = view.findViewById(R.id.viewuserimageimageview);
+        profile_image = view.findViewById(R.id.profile_image);
         avatar = view.findViewById(R.id.avatar);
         account = view.findViewById(R.id.account);
         invite = view.findViewById(R.id.invite);
         logout = view.findViewById(R.id.logout);
 
-
-
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
-
-        reference.addValueEventListener(new ValueEventListener() {
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                User user = dataSnapshot.getValue(User.class);
-                username.setText(user.getUsername());
-                if (user.getImageURL().equals("default")) {
-                    viewuserimageimageview.setImageResource(R.drawable.defaultprfilepic);
-                } else {
-                    Glide.with(settingsFragment.this).load(user.getImageURL()).into(viewuserimageimageview);
 
-                }
 
             }
 
@@ -69,7 +57,9 @@ public class settingsFragment extends Fragment {
 
             }
         });
-        username.setOnClickListener(new View.OnClickListener() {
+
+
+                username.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),UpdateProfile.class);
@@ -102,7 +92,7 @@ public class settingsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getActivity(), LoginActivity.class));
+                startActivity(new Intent(getActivity(), SignUp.class));
                 getActivity().finish();
 
             }

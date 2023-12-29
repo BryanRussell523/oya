@@ -1,7 +1,10 @@
 package com.example.oya;
 
 
+import static androidx.navigation.ActivityNavigatorDestinationBuilderKt.activity;
+
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +17,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.oya.Adapter.UserAdapter;
-import com.example.oya.Model.Chat;
-import com.example.oya.Model.User;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.oya.Adapter.ChatListAdapter;
+import com.example.oya.Object.ChatObject;
+import com.example.oya.Object.UserObject;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -27,21 +29,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Set;
+
+import android.Manifest;
+import android.widget.LinearLayout;
 
 public class chatsFragment extends Fragment {
     ImageButton fab;
-    private RecyclerView recyclerView;
-    private UserAdapter userAdapter;
-    private List<User> mUsers;
-    FirebaseUser firebaseUser;
-    DatabaseReference databaseReference;
-    private List<String> userList;
-
+    ImageButton fab2;
+    private RecyclerView recyclerview;
+    private RecyclerView.Adapter mChatListAdapter;
+    private RecyclerView.LayoutManager mChatListLayoutManager;
+    ArrayList<ChatObject> chatList;
 
     @Nullable
     @Override
@@ -49,40 +47,21 @@ public class chatsFragment extends Fragment {
         View view = inflater.inflate(R.layout.chatsfragment, container, false);
         //return inflater.inflate(R.layout.chatsfragment, null);
         fab = view.findViewById(R.id.fab);
-        //Display users with chat history
-        recyclerView = view.findViewById(R.id.recyclerview);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        userList = new ArrayList<>();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Chats");
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                //to empty the list before adding new user items to it
-                userList.clear();
-                //For Loop to keep displaying users on list
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    //call chat class to get the list of users with chat history
-                    Chat chat = snapshot.getValue(Chat.class);
-                    if (chat.getSender().equals(firebaseUser.getUid())) {
-                        userList.add(chat.getReceiver());
-                    }
-                    if (chat.getReceiver().equals(firebaseUser.getUid())) {
-                        userList.add(chat.getSender());
-                    }
-                }
-                readChats();
-            }
+        //WALLET BUTTON
+        fab2 = view.findViewById(R.id.fab2);
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+       // firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        chatList= new ArrayList<>();
+        recyclerview= view.findViewById(R.id.recyclerview);
 
-            }
-        });
-
-//OPEN ALL USERS LIST ACTIVITY
+        //GET PERMISSION TO LOAD USERS FROM CONTACT LIST
+        getPermissions();
+        //INITIALIZE RECYCLER VIEW
+        initializeRecyclerView();
+        //LOAD CHAT LIST
+        getUserChatList();
+        //OPEN ALL USERS LIST ACTIVITY
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,41 +69,36 @@ public class chatsFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        //OPEN OYA PAY
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //MAKE ANIMATED SPLASH SCREEN FOR SWITCHING MODES
+                Intent intent2 = new Intent(getActivity(), SplashScreenPro.class);
+                startActivity(intent2);
+            }
+        });
         return view;
     }
-
-    private void readChats() {
-        mUsers = new ArrayList<>();
-        //Go inside "Users" table in firebase database and fetch users with chat history
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+    private void getUserChatList(){
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("user").child(FirebaseAuth.getInstance().getUid()).child("chat");
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                //to empty the list before adding new user items to it
-                mUsers.clear();
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    User user = snapshot.getValue(User.class);
-                    //display 1 user from chats
-                    for (String id : userList) {
-                        if (user.getId().equals(id)) {
-                            if (mUsers.size() != 0) {
-                                ListIterator<User> listIteratorUser = mUsers.listIterator();
-                                while (listIteratorUser.hasNext()) {
-                                    User user1 = listIteratorUser.next();
-                                    if (!user.getId().equals(user1.getId())) {
-                                        listIteratorUser.add(user);
-                                        break;
-                                    }
-                                }
-                            } else {
-                                mUsers.add(user);
-                            }
+                if(dataSnapshot.exists()){
+                    for (DataSnapshot childSnapshot:dataSnapshot.getChildren()){
+                        ChatObject chatObject = new ChatObject(childSnapshot.getKey());
+                        boolean exists = false;
+                        for(ChatObject mChatIterator: chatList) {
+                            if (mChatIterator.getChatId().equals(chatObject.getChatId()))
+                                exists = true;
                         }
-
+                        if (exists)
+                            continue;
+                        chatList.add(chatObject);
+                        mChatListAdapter.notifyDataSetChanged();
                     }
                 }
-                userAdapter = new UserAdapter(getContext(), mUsers);
-                recyclerView.setAdapter(userAdapter);
             }
 
             @Override
@@ -132,9 +106,20 @@ public class chatsFragment extends Fragment {
 
             }
         });
-
+    }
+    private void initializeRecyclerView() {
+        chatList = new ArrayList<>();
+        recyclerview.setNestedScrollingEnabled(false);
+        recyclerview.setHasFixedSize(false);
+        mChatListLayoutManager = new LinearLayoutManager(getActivity(), LinearLayout.VERTICAL, false);
+        recyclerview.setLayoutManager(mChatListLayoutManager);
+        mChatListAdapter = new ChatListAdapter(chatList);
+        recyclerview.setAdapter(mChatListAdapter);
+    }
+    //GET PERMISSION TO LOAD USERS FROM CONTACT LIST
+    private void getPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_CONTACTS, Manifest.permission.READ_CONTACTS}, 1);
+        }
     }
 }
-
-
-
