@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS LAYOUT IS CREATED FOR USER TO SEND MESSAGE. 
+THIS LAYOUT WILL BE CALLED IN THE MAIN CODE TO DISPLAY ON USER TO USER CHAT-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_sender_message"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/sender_message"
+                android:background="@drawable/senderchatbubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender Message"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:padding="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+        
+
+    
+</RelativeLayout>

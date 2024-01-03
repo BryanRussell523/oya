@@ -59,6 +59,7 @@ public class selectUser extends AppCompatActivity{
             }
         });
     }
+
     //GETTING CONTACTS INFORMATION
     private void getContactList(){
         String ISOPrefix = getCountyISO();

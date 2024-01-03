@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_sign_up"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="158dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="135dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="219dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/signinbuttonback"
+        android:fontFamily="@font/abeezee"
+        android:padding="15dp"
+        android:text="Let's signup!!!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <RelativeLayout
+        android:id="@+id/signuppanel"
+        android:layout_width="320dp"
+        android:layout_height="425dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/loginpanel"
+        android:elevation="25dp">
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="288dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/passwordtextboxbackground"
+            android:drawableStart="@drawable/signupphone"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/getOTP"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/phonenumber"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:elevation="25dp">
+
+            <TextView
+                android:id="@+id/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/abeezee"
+                android:text="Get OTP"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/button_animation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/button_loading_white" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/OTP"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/passwordtextboxbackground"
+            android:drawableStart="@drawable/passwordicon"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="OTP"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verifyOTPBtn"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/OTP"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/circlebutton"
+            android:elevation="25dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Verify OTP"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signuppanel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Oyaonline"
+        android:textColor="@color/lightblue"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_introfor_chat_mode.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_introfor_chat_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_users.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_users.xml"
+    },
+    {
+        "merged": "com.example.oya.app-mergeDebugResources-59:/layout/activity_user_touserchat.xml",
+        "source": "com.example.oya.app-main-62:/layout/activity_user_touserchat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\userviewlayout.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\userviewlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\mainchatlayout.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\mainchatlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\item_message.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\chatsfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\chatsfragment.xml"
+    },
+    {
+        "merged": "com.example.oya.app-mergeDebugResources-59:/layout/item_message.xml",
+        "source": "com.example.oya.app-main-62:/layout/item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\settingsfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\settingsfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\check_internet_dialog.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\check_internet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_send_money.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_send_money.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_update_profile.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_update_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\senderchatlayout.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\senderchatlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_pay_bills.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_pay_bills.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_set_profile.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_set_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_buy_airtime.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_buy_airtime.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\prosettingsfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\prosettingsfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_introfor_professional_mode.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_introfor_professional_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_splash_screen_pro.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_splash_screen_pro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\receiverchatlayout.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\receiverchatlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\callsfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\callsfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_professional_mode.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_professional_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\chat_item.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\chat_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_account_settings.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_account_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_history.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\walletfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\walletfragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\activity_user_touserchat.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_user_touserchat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-mergeDebugResources-59:\\layout\\momentsfragment.xml",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\momentsfragment.xml"
+    }
+]

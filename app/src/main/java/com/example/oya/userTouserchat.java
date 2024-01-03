@@ -38,7 +38,7 @@ public class userTouserchat extends AppCompatActivity implements PopupMenu.OnMen
     private RecyclerView recyclerviewofusertouserchat;
     private MessageAdapter mMessageAdapter;
     private RecyclerView.LayoutManager mMessageLayoutManager;
-        //GET CHAT ID INTO THIS ACTIVITY
+    //GET CHAT ID INTO THIS ACTIVITY
     String chatID;
     DatabaseReference mChatDb;
     @Override
@@ -121,8 +121,8 @@ public class userTouserchat extends AppCompatActivity implements PopupMenu.OnMen
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
-   }
-   //METHOD TO MAKE RECYCLERVIEW LOAD MESSAGES
+    }
+    //METHOD TO MAKE RECYCLERVIEW LOAD MESSAGES
     private void initializeRecyclerView() {
         //PREPARE RECYCLERVIEW TO LOAD MESSAGES
         recyclerviewofusertouserchat = findViewById(R.id.recyclerviewofusertouserchat);
