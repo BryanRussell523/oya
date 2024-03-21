@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.EditText;
@@ -26,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.karumi.dexter.listener.single.SnackbarOnDeniedPermissionListener;
 
 public class setProfile extends AppCompatActivity {
     private ImageView userImage;
@@ -48,6 +50,8 @@ public class setProfile extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference().child("user");
         storageReference = FirebaseStorage.getInstance().getReference().child("profile_images");
 
+
+
         userImage = findViewById(R.id.userImage);
         usernameInput = findViewById(R.id.usernameInput);
         descInput = findViewById(R.id.descInput);
@@ -56,23 +60,19 @@ public class setProfile extends AppCompatActivity {
         userImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openImagePicker();
+                selectProfileImage();
             }
         });
-
         saveprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = usernameInput.getText().toString().trim();
-                String description = descInput.getText().toString().trim();
-                saveProfile(username, description);
+                saveProfile();
+
             }
         });
-
-        checkProfileAndNavigate();
     }
 
-    private void openImagePicker() {
+    private void selectProfileImage() {
         // Use an intent to open the image picker activity
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -81,11 +81,9 @@ public class setProfile extends AppCompatActivity {
         // Start the activity for result, expecting a selected image
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             // Get the selected image URI
             selectedImageUri = data.getData();
@@ -94,85 +92,47 @@ public class setProfile extends AppCompatActivity {
             userImage.setImageURI(selectedImageUri);
         }
     }
-
-
-    private void saveProfile(String username, String description) {
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+    private void saveProfile() {
+        String username = usernameInput.getText().toString().trim();
+        String description = descInput.getText().toString().trim();
+        if (TextUtils.isEmpty(username)) {
+            Toast.makeText(this, "Please enter a username", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
             String userId = currentUser.getUid();
 
+            DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("user");
+            //Save the username and description
+            DatabaseReference userRef = usersRef.child(userId);
+            userRef.child("username").setValue(username);
+            userRef.child("description").setValue(description);
+
+            // Check if an image is selected
             if (selectedImageUri != null) {
-                ContentResolver contentResolver = getContentResolver();
-                String mimeType = contentResolver.getType(selectedImageUri);
-                String fileExtension = MimeTypeMap.getSingleton().getExtensionFromMimeType(mimeType);
-                String fileName = userId + "." + fileExtension;
-
-                StorageReference imageRef = storageReference.child(fileName);
-                imageRef.putFile(selectedImageUri)
+                StorageReference fileReference = storageReference.child(System.currentTimeMillis()+"."+ getFileExtension(selectedImageUri));
+                fileReference.putFile(selectedImageUri)
                         .addOnSuccessListener(taskSnapshot -> {
-                            // Image uploaded successfully
-                            imageRef.getDownloadUrl().addOnSuccessListener(uri -> {
-                                String imageUrl = uri.toString();
-
-                                // Create a UserObject with the obtained details
-                                UserObject user = new UserObject(userId, currentUser.getPhoneNumber(), username, imageUrl, description);
-                                user.setProfileSet(true);
-
-                                // Save the user profile to the Firebase Realtime Database
-                                saveUserToDatabase(user);
+                           //image upload successful, get the download URL
+                            fileReference.getDownloadUrl().addOnSuccessListener(uri ->{
+                                userRef.child("profileImageUrl").setValue(uri.toString());
                             });
                         })
-                        .addOnFailureListener(e -> {
+                        .addOnFailureListener(e->{
                             Toast.makeText(this, "Failed to upload image", Toast.LENGTH_SHORT).show();
                         });
-            } else {
-                // No image selected
-                UserObject user = new UserObject(userId, currentUser.getPhoneNumber(), username, null, description);
-                user.setProfileSet(true);
-                saveUserToDatabase(user);
             }
+            Snackbar.make(findViewById(R.id.setProfile),"Profile saved", Snackbar.LENGTH_SHORT).show();
+            startActivity(new Intent(setProfile.this, homeActivity.class));
+            finish();
+        }else{
+            Snackbar.make(findViewById(R.id.setProfile),"User profile failed",Snackbar.LENGTH_SHORT).show();
         }
     }
-
-    private void saveUserToDatabase(UserObject user) {
-        DatabaseReference userRef = databaseReference.child(user.getUid());
-        userRef.setValue(user)
-                .addOnSuccessListener(aVoid -> {
-                    Snackbar.make(findViewById(R.id.setProfile), "Profile saved successfully", Snackbar.LENGTH_SHORT).show();
-                    navigateToDestination();
-                })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(setProfile.this, "Failed to save profile...", Toast.LENGTH_SHORT).show();
-                });
-    }
-
-    private void navigateToDestination() {
-        Intent intent = new Intent(setProfile.this, homeActivity.class);
-        startActivity(intent);
-        finish(); // Close the current activity
-    }
-
-    private void checkProfileAndNavigate() {
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (currentUser != null) {
-            DatabaseReference userRef = FirebaseDatabase.getInstance().getReference().child("user").child(currentUser.getUid());
-            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    if (dataSnapshot.exists()) {
-                        Boolean isProfileSet = dataSnapshot.child("profileSet").getValue(Boolean.class);
-                        if (isProfileSet != null && isProfileSet) {
-                            // User has set the profile, navigate to homeActivity
-                            navigateToDestination();
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-                    // Handle database error
-                }
-            });
-        }
+    private String getFileExtension(Uri uri){
+        ContentResolver contentResolver = getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
 }
