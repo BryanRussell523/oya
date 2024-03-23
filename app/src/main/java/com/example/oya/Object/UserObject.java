@@ -1,24 +1,27 @@
 package com.example.oya.Object;
 
-public class UserObject {
+import java.io.Serializable;
+
+public class UserObject implements Serializable {
     private String uid;
-    private String phoneNumber;
+    private String name;
+    private String phone;
     private String username;
     private String description;
-    private String imageUri;
-    private boolean profileSet;
+    private String profileImageUrl;
 
     public UserObject() {
         // Default constructor required for Firebase deserialization
     }
 
     // Constructor with all fields
-    public UserObject(String uid, String phoneNumber, String username, String imageUri, String description) {
+    public UserObject(String uid, String name, String phone, String username, String description, String profileImageUrl) {
         this.uid = uid;
-        this.phoneNumber = phoneNumber;
+        this.name = name;
+        this.phone = phone;
         this.username = username;
+        this.profileImageUrl = profileImageUrl;
         this.description = description;
-        this.imageUri = imageUri;
     }
 
     public String getUid() {
@@ -29,12 +32,20 @@ public class UserObject {
         this.uid = uid;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getName() {
+        return name;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getphone() {
+        return phone;
+    }
+
+    public void setphone(String phoneNumber) {
+        this.phone = phone;
     }
 
     public String getUsername() {
@@ -53,19 +64,11 @@ public class UserObject {
         this.description = description;
     }
 
-    public String getImageUri() {
-        return imageUri;
+    public String getprofileImageUrl() {
+        return profileImageUrl;
     }
 
-    public void setImageUri(String imageUri) {
-        this.imageUri = imageUri;
-    }
-
-    public boolean isProfileSet() {
-        return profileSet;
-    }
-
-    public void setProfileSet(boolean profileSet) {
-        this.profileSet = profileSet;
+    public void setprofileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
     }
 }
