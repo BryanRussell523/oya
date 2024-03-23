@@ -1,64 +1,61 @@
 package com.example.oya.Adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.oya.Object.UserObject;
 import com.example.oya.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserListViewHolder>{
-    ArrayList<UserObject> userList;
+public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserViewHolder> {
+    private List<UserObject> userList;
+    private Context context;
 
-    public UserListAdapter(ArrayList<UserObject> userList){
+    public UserListAdapter(Context context,List<UserObject> userList) {
+        this.context = context;
         this.userList = userList;
     }
+
     @NonNull
     @Override
-    public UserListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.userviewlayout, null, false);
-        RecyclerView.LayoutParams lp = new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        layoutView.setLayoutParams(lp);
-
-        UserListViewHolder rcv = new UserListViewHolder(layoutView);
-        return rcv;
+    public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.userviewlayout, parent, false);
+        return new UserViewHolder(view);
     }
+
     @Override
-    public void onBindViewHolder(@NonNull final UserListViewHolder holder,final int position) {
-        holder.nameofuser.setText(userList.get(position).getName());
-        holder.phone.setText(userList.get(position).getPhone());
-
-        holder.UserItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String key = FirebaseDatabase.getInstance().getReference().child("chat").push().getKey();
-                FirebaseDatabase.getInstance().getReference().child("user").child(FirebaseAuth.getInstance().getUid()).child("chat").child(key).setValue(true);
-                FirebaseDatabase.getInstance().getReference().child("user").child(userList.get(position).getUid()).child("chat").child(key).setValue(true);
-            }
-        });
+    public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+        UserObject user = userList.get(position);
+        holder.bind(user);
     }
+
     @Override
     public int getItemCount() {
         return userList.size();
     }
-    class UserListViewHolder extends RecyclerView.ViewHolder{
-        public TextView nameofuser, phone;
-        public LinearLayout UserItem;
-       public UserListViewHolder(View view){
-            super(view);
-            nameofuser = view.findViewById(R.id.nameofuser);
-            phone = view.findViewById(R.id.phone);
-            UserItem = view.findViewById(R.id.UserItem);
+    public static class UserViewHolder extends RecyclerView.ViewHolder {
+        private TextView nameofuser;
+        private TextView phone;
+
+        public UserViewHolder(@NonNull View itemView) {
+            super(itemView);
+            nameofuser = itemView.findViewById(R.id.nameofuser);
+            phone = itemView.findViewById(R.id.phone);
+        }
+        public void bind(UserObject user) {
+            nameofuser.setText(user.getName());
+            phone.setText(user.getphone());
         }
     }
 }
