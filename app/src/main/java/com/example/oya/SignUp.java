@@ -77,15 +77,12 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         mAuth = FirebaseAuth.getInstance();
-
         phonenumber = findViewById(R.id.phonenumber);
         getOTP = findViewById(R.id.getOTP);
         button_animation = findViewById(R.id.button_animation);
         buttonText = findViewById(R.id.buttonText);
         countryCodePicker = findViewById(R.id.countryCodePicker);
-
         userIsLoggedIn();
-
         // Remove first 0 from phone number entry
         phonenumber.addTextChangedListener(new TextWatcher() {
             @Override
@@ -119,7 +116,6 @@ public class SignUp extends AppCompatActivity {
                 button_animation.playAnimation();
                 buttonText.setVisibility(View.GONE);
                 new Handler().postDelayed(() -> resetButton(), TIMER);
-
             }
         });
         mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
