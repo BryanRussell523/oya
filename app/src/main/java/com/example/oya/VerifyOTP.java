@@ -171,45 +171,18 @@ public class VerifyOTP extends AppCompatActivity {
         FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-
-                    final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-                    if(user != null){
-                        final DatabaseReference mUserDB = FirebaseDatabase.getInstance().getReference().child("user").child(user.getUid());
-                        mUserDB.addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                if (!dataSnapshot.exists()) {
-                                    Map<String, Object> userMap = new HashMap<>();
-                                    userMap.put("phone", user.getPhoneNumber());
-                                    userMap.put("name", user.getPhoneNumber());
-                                    mUserDB.updateChildren(userMap)
-                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                @Override
-                                                public void onComplete(@NonNull Task<Void> innerTask) {
-                                                    if (innerTask.isSuccessful()) {
-                                                        Intent i = new Intent(VerifyOTP.this, setProfile.class);
-                                                        startActivity(i);
-                                                        finish();
-                                                    } else {
-                                                        Toast.makeText(VerifyOTP.this, "Failed to update user information", Toast.LENGTH_LONG).show();
-                                                    }
-                                                }
-                                            });
-                                } else {
-                                    // Handle the case where currentUser is null
-                                    Toast.makeText(VerifyOTP.this, "User is not authenticated", Toast.LENGTH_LONG).show();
-                                }
-                            }
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                            }
-                        });
+                if(task.isSuccessful()) {
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if(user != null) {
+                        Intent i = new Intent(VerifyOTP.this, setProfile.class);
+                        startActivity(i);
+                        finish();
                     }
+                } else {
+                    Toast.makeText(VerifyOTP.this, "Failed to authenticate user", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
+
 }
