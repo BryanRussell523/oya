@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="205dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <LinearLayout
+        android:padding="16dp"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <View
+        android:id="@+id/note_color_bar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+        <LinearLayout
+            android:id="@+id/noteActionLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/shareNote"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sharenote"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/deleteNote"
+                android:layout_marginLeft="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:id="@+id/cancel"/>
+
+        </LinearLayout>
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:text="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/note_content"
+        android:fontFamily="@font/nunito"
+        android:text="Content of the note is very important at this point.We must be ast and avoid sleeping. Ican only provide a brief view of thecontent of the note. I hope it works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/note_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/note_timestamp"
+        android:text="22/04/2024"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="9dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+    android:background="@drawable/popupmenubackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Include layout for Menu Item 1 -->
+    <include layout="@layout/moments_custom_menu_item" />
+
+    <!-- Include layout for Menu Item 2 -->
+    <include layout="@layout/favorite_chats_custom_menu_item" />
+
+    <!-- Include layout for Menu Item 3 -->
+    <include layout="@layout/archived_chats_custom_menu_item" />
+
+    <!-- Include layout for Menu Item 4 -->
+    <include layout="@layout/blocked_chats_custom_menu_item" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

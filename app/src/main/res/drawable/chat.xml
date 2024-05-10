@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Icon drawable when tab is selected -->
+    <item android:drawable="@drawable/filled_chats"
+        android:state_selected="true" />
+    <!-- Default icon drawable -->
+    <item android:drawable="@drawable/chats" />
+</selector>

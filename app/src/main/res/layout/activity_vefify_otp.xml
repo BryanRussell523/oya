@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".VerifyOTP">
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/authbackground">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="158dp"
+            android:layout_height="117dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="135dp"
+            app:srcCompat="@drawable/splash" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativelayout1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+           android:fontFamily="@font/nunito"
+            android:text="Verify your Identity"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginLeft="15dp"
+            android:text="Enter the code sent to your phone"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/number"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter OTP"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/otpContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <!-- Define EditText for each digit -->
+            <EditText
+                android:id="@+id/otpDigit1"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:background="@drawable/signuptextbox"
+                android:ems="1"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/otpDigit2"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:background="@drawable/signuptextbox"
+                android:ems="1"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/otpDigit3"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:background="@drawable/signuptextbox"                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/otpDigit4"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:background="@drawable/signuptextbox"
+                android:ems="1"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/otpDigit5"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:background="@drawable/signuptextbox"
+                android:ems="1"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/otpDigit6"
+                android:layout_width="55dp"
+                android:hint="-"
+                android:textColorHint="@color/black"
+                android:layout_height="60dp"
+                android:background="@drawable/signuptextbox"
+                android:ems="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/verifyOTPBtn"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/otpContainer"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button"
+            android:elevation="25dp">
+
+            <TextView
+                android:id="@+id/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:fontFamily="@font/nunito"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/button_animation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/button_loading_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

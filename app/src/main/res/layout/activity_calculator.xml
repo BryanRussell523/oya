@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize" />
+
+    <GridLayout
+        android:id="@+id/calculatorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="80dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:gravity="end|center_vertical"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <!-- First row of buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clear"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="clearDisplay"
+            android:text="AC"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:src="@drawable/del"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="onOperatorClick"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+
+
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="onOperatorClick"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="onOperatorClick"
+            android:text="÷"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Second row of buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            
+            android:fontFamily="@font/poppins"
+
+            android:onClick="onDigitClick"
+            android:text="7"
+            
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:background="@color/lighterBlue"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:onClick="onDigitClick"
+            android:text="8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@color/lighterBlue"
+
+
+
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="9"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:gravity="center"
+            
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onOperatorClick"
+            android:text="X" />
+
+        <!-- Third row of buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="4"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="5"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onOperatorClick"
+            android:text="-" />
+
+        <!-- Fourth row of buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="1"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            
+            
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="2"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lightergrey"
+            android:gravity="center"
+
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onOperatorClick"
+            android:text="+" />
+
+        <!-- Fifth row of buttons -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onDigitClick"
+            android:text="0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/lighterBlue"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/nunito"
+            android:onClick="onOperatorClick"
+            android:text="." />
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/poppins"
+            android:onClick="onEqualsClick"
+            android:text="=" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/calculator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="695dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@id/cardView"
+        android:background="@drawable/calculator"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/cardView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/calendar"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <ImageView
+        android:id="@+id/notes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="695dp"
+        android:layout_toRightOf="@id/cardView"
+        android:background="@drawable/notes"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tools" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textBelowFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nunito"
+        android:text="Tools"
+        android:textColor="@color/grey"
+        android:textSize="13sp" />
+</RelativeLayout>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:id="@+id/nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/monthBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/calendarbackward" />
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito"
+            android:text="Name of month"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/monthForward"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/caledarforward" />
+    </RelativeLayout>
+    <!-- Calendar Grid View -->
+    <GridView
+        android:id="@+id/calendarGridView"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_below="@+id/nav_container"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:horizontalSpacing="1dp"
+        android:numColumns="7"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+    <TextView
+        android:id="@+id/taskTextView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/calendarGridView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="Tasks"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/calculator"
+        android:layout_below="@+id/taskTextView"
+        android:layout_marginTop="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/taskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/box_shadow"
+        android:visibility="visible">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/dialog_menu_background"
+            android:elevation="100dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:text="New Event"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/eventNameTextView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="46dp"
+                android:fontFamily="@font/nunito"
+                android:text="Event Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/eventInput"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                android:padding="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eventNameTextView" />
+
+            <TextView
+                android:id="@+id/eventDescTextView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eventInput" />
+
+            <EditText
+                android:id="@+id/descInput"
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                android:padding="10dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eventDescTextView" />
+
+            <TextView
+                android:id="@+id/eventDateTextView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nunito"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descInput" />
+
+            <RelativeLayout
+                android:id="@+id/dateContainer"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/search_background"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eventDateTextView">
+
+                <TextView
+                    android:id="@+id/dateView"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/dateButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/taskcalendar"
+                    app:tint="@color/grey" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/startTimeView"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito"
+                android:text="Start time"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateContainer" />
+
+            <RelativeLayout
+                android:id="@+id/statTimeContainer"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/startTimeView">
+
+                <TextView
+                    android:id="@+id/startTimeTextView"
+                    android:layout_width="140dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/startTimePicker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/clock"
+                    app:tint="@color/grey" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/endTimeView"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito"
+                android:text="End time"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateContainer" />
+
+            <RelativeLayout
+                android:id="@+id/endTimeContainer"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_background"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/startTimeView">
+
+                <TextView
+                    android:id="@+id/endTimeTextView"
+                    android:layout_width="140dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/endTimePicker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/clock"
+                    app:tint="@color/grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateContainer">
+
+                <CheckBox
+                    android:id="@+id/remindMe"
+                    android:layout_width="125dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Remind me"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/selectTextView"
+                    android:layout_width="105dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/remindMe"
+                    android:layout_marginLeft="23dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Select Category"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/categoryContainer"
+                    android:layout_width="380dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/selectTextView"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/search_background">
+
+                    <Spinner
+                        android:id="@+id/selectCategory"
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/flag_transparent" />
+
+                    <ImageView
+                        android:id="@+id/categoryPicker"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/select" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/newCatergory"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/categoryContainer"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="+ New Category"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/createTask"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/newCatergory"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/button"
+                    android:elevation="25dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/button_animation"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/button_loading_white" />
+
+                    <TextView
+                        android:id="@+id/buttonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/nunito"
+                        android:text="Create"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/calculator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="695dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@id/cardView"
+        android:background="@drawable/calculator"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/cardView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/calendar"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <ImageView
+        android:id="@+id/notes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="695dp"
+        android:layout_toRightOf="@id/cardView"
+        android:background="@drawable/notes"
+        android:visibility="gone"
+        app:cardElevation="4dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tools" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textBelowFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Tools"
+        android:textColor="@color/grey"
+        android:textSize="13sp" />
+
+</RelativeLayout>

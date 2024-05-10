@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+    <TextView
+        android:layout_alignParentStart="true"
+        android:id="@+id/Dateofevent"
+        android:fontFamily="@font/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Date of Event"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:id="@+id/sideColor"
+        android:layout_marginTop="30dp"
+        android:background="@color/darkerGreen"
+        android:layout_width="5dp"
+        android:layout_height="90dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/StartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/Indicator"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/StartTime"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/Indicator"
+        android:id="@+id/EndTime"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/deleteTask"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@id/eventName"
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/StartTime"
+        android:id="@+id/eventName"
+        android:fontFamily="@font/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Event Name"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+<TextView
+    android:layout_marginLeft="15dp"
+    android:layout_below="@id/eventName"
+    android:fontFamily="@font/nunito"
+    android:id="@+id/eventDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Event Description"
+    android:textSize="16sp"
+    android:textColor="@color/grey"
+    android:layout_marginTop="8dp"/>
+</RelativeLayout>
