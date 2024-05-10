@@ -8,17 +8,22 @@
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="33" />
-    <!-- Permission to check for internet connection -->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- GET PERMISSION TO LOAD USERS FROM CONTACT LIST -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
@@ -42,85 +47,89 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true" >
-        <activity
-            android:name="com.example.oya.History"
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.oya.fileprovider"
             android:exported="false"
-            android:resizeableActivity="true"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.oya.ShareNote"
+            android:exported="false"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.payBills"
+            android:name="com.example.oya.EditNote"
             android:exported="false"
-            android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.buyAirtime"
+            android:name="com.example.oya.UserProfileView"
             android:exported="false"
-            android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.sendMoney"
+            android:name="com.example.oya.NotePad"
             android:exported="false"
-            android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.SplashScreenPro"
+            android:name="com.example.oya.CalendarActivity"
             android:exported="false"
-            android:resizeableActivity="true"
-            android:theme="@style/Theme.Oya.NoActionBar" />
-        <activity
-            android:name="com.example.oya.IntroforProfessionalMode"
-            android:exported="false"
-            android:resizeableActivity="true"
-            android:theme="@style/Theme.Oya.NoActionBar" />
-        <activity
-            android:name="com.example.oya.IntroforChatMode"
-            android:exported="false"
-            android:resizeableActivity="true"
-            android:theme="@style/Theme.Oya.NoActionBar" />
-        <activity
-            android:name="com.example.oya.ProfessionalMode"
-            android:exported="false"
-            android:resizeableActivity="true"
-            android:theme="@style/Theme.Oya.NoActionBar" />
-        <activity
-            android:name="com.example.oya.accountSettings"
-            android:exported="false"
-            android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
+        <activity
+            android:name="com.example.oya.NotesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Oya" />
+        <activity
+            android:name="com.example.oya.CalculatorActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Oya" />
+        <activity
+            android:name="com.example.oya.VerifyOTP"
+            android:exported="false"
+            android:theme="@style/Theme.Oya" />
+
+        <service
+            android:name="com.example.oya.firebase.FirebaseManager"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name="com.example.oya.selectUser"
             android:exported="false"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.userTouserchat"
+            android:name="com.example.oya.UserchatActivity"
             android:exported="false"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.example.oya.UpdateProfile"
+            android:name="com.example.oya.editProfileActivity"
             android:exported="false"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
-            android:name="com.example.oya.profileActivity"
-            android:exported="false"
-            android:resizeableActivity="true"
-            android:theme="@style/Theme.Oya" />
-        <activity
-            android:name="com.example.oya.chatViewActivity"
+            android:name="com.example.oya.homeActivity"
             android:exported="false"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
             android:name="com.example.oya.setProfile"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="false"
+            android:launchMode="singleTop"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
             android:name="com.example.oya.SignUp"
             android:exported="false"
+            android:launchMode="singleTop"
             android:resizeableActivity="true"
             android:theme="@style/Theme.Oya" />
         <activity
@@ -128,6 +137,7 @@
             android:exported="true"
             android:resizeableActivity="true"
             android:screenOrientation="portrait"
+            android:supportsRtl="true"
             android:theme="@style/Theme.Oya" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -137,7 +147,7 @@
         </activity>
 
         <service
-            android:name="com.example.oya.firebase.MessagingService"
+            android:name="com.example.oya.firebase.FirebaseManager"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

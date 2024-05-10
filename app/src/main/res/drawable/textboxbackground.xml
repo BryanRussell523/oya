@@ -4,14 +4,15 @@
         <shape android:shape="rectangle">
             <solid android:color="@color/white"/>
             <stroke
-                android:color="@color/lightblue"
+                android:color="@color/blue"
                 android:width="3dp"
 
                 />
             <corners
-                android:topRightRadius="50dp"
-                android:topLeftRadius="50dp"
-                android:bottomLeftRadius="50dp"
+                android:topRightRadius="5dp"
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
 
                 />
         </shape>

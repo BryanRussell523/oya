@@ -62,6 +62,8 @@ dependencies {
 
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("com.android.support:design:27.1.1")
+    //Resizable image view
+    implementation ("androidx.appcompat:appcompat:1.6.1")
 
 
     implementation ("com.firebaseui:firebase-ui-firestore:8.0.0")
@@ -79,7 +81,9 @@ dependencies {
 
     implementation("com.squareup.picasso:picasso:2.71828")
     //DISPLAY USER IMAGE FROM DATABASE
-    implementation("com.github.bumptech.glide:glide:4.8.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+
     //FLOATING ACTION BUTTON
     implementation("com.google.android.material:material:1.1.0")
 
@@ -93,4 +97,10 @@ dependencies {
     implementation ("com.karumi:dexter:4.2.0")
     implementation("androidx.browser:browser:1.3.0")
     implementation ("com.google.android.play:integrity:1.3.0")
+//   Edit text adjustment
+    implementation ("com.google.android.material:material:1.4.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.3")
+
+
+
 }

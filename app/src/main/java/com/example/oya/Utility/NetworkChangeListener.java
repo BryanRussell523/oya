@@ -25,7 +25,7 @@ public class NetworkChangeListener extends BroadcastReceiver {
             //Show dialog
             AlertDialog dialog = builder.create();
             dialog.show();
-            dialog.setCancelable(false);
+            dialog.setCancelable(true);
             dialog.getWindow().setGravity(Gravity.BOTTOM);
 
             retry.setOnClickListener(new View.OnClickListener() {

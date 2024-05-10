@@ -4,10 +4,13 @@ package com.example.oya.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.oya.R;
@@ -20,16 +23,33 @@ public final class CallsfragmentBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageButton fab;
+  public final ImageView Videocall;
 
   @NonNull
-  public final ImageButton fab2;
+  public final ImageView Voicecall;
 
-  private CallsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull ImageButton fab,
-      @NonNull ImageButton fab2) {
+  @NonNull
+  public final TextView myapptext;
+
+  @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final ImageView search;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  private CallsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull ImageView Videocall,
+      @NonNull ImageView Voicecall, @NonNull TextView myapptext, @NonNull RecyclerView recyclerView,
+      @NonNull ImageView search, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.fab = fab;
-    this.fab2 = fab2;
+    this.Videocall = Videocall;
+    this.Voicecall = Voicecall;
+    this.myapptext = myapptext;
+    this.recyclerView = recyclerView;
+    this.search = search;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -59,19 +79,44 @@ public final class CallsfragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fab;
-      ImageButton fab = ViewBindings.findChildViewById(rootView, id);
-      if (fab == null) {
+      id = R.id.Videocall;
+      ImageView Videocall = ViewBindings.findChildViewById(rootView, id);
+      if (Videocall == null) {
         break missingId;
       }
 
-      id = R.id.fab2;
-      ImageButton fab2 = ViewBindings.findChildViewById(rootView, id);
-      if (fab2 == null) {
+      id = R.id.Voicecall;
+      ImageView Voicecall = ViewBindings.findChildViewById(rootView, id);
+      if (Voicecall == null) {
         break missingId;
       }
 
-      return new CallsfragmentBinding((RelativeLayout) rootView, fab, fab2);
+      id = R.id.myapptext;
+      TextView myapptext = ViewBindings.findChildViewById(rootView, id);
+      if (myapptext == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.search;
+      ImageView search = ViewBindings.findChildViewById(rootView, id);
+      if (search == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new CallsfragmentBinding((RelativeLayout) rootView, Videocall, Voicecall, myapptext,
+          recyclerView, search, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

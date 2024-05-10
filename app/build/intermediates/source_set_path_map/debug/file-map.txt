@@ -33,10 +33,10 @@ com.example.oya.app-jetified-activity-ktx-1.7.1-31 C:\Users\Bryan Russell\.gradl
 com.example.oya.app-coordinatorlayout-1.1.0-32 C:\Users\Bryan Russell\.gradle\caches\transforms-3\9715d5ec94544f4b7607f6e6315b4c0a\transformed\coordinatorlayout-1.1.0\res
 com.example.oya.app-jetified-ccp-2.5.1-33 C:\Users\Bryan Russell\.gradle\caches\transforms-3\9dbce37bd021d094b1cd8e05eaf00a18\transformed\jetified-ccp-2.5.1\res
 com.example.oya.app-lifecycle-livedata-2.6.2-34 C:\Users\Bryan Russell\.gradle\caches\transforms-3\a4c82fcf02a7a619dc521d4db28f8672\transformed\lifecycle-livedata-2.6.2\res
-com.example.oya.app-jetified-glide-4.8.0-35 C:\Users\Bryan Russell\.gradle\caches\transforms-3\a573c8d8ac9b2fedbb8ad52d94be1ad9\transformed\jetified-glide-4.8.0\res
-com.example.oya.app-slidingpanelayout-1.2.0-36 C:\Users\Bryan Russell\.gradle\caches\transforms-3\a9fe0968144ee431fa597e48c19871d7\transformed\slidingpanelayout-1.2.0\res
-com.example.oya.app-cardview-1.0.0-37 C:\Users\Bryan Russell\.gradle\caches\transforms-3\ad8d5209a4cde2d4744746c695d15a7e\transformed\cardview-1.0.0\res
-com.example.oya.app-jetified-emoji2-1.2.0-38 C:\Users\Bryan Russell\.gradle\caches\transforms-3\aea15878c193954a535b14d052630659\transformed\jetified-emoji2-1.2.0\res
+com.example.oya.app-slidingpanelayout-1.2.0-35 C:\Users\Bryan Russell\.gradle\caches\transforms-3\a9fe0968144ee431fa597e48c19871d7\transformed\slidingpanelayout-1.2.0\res
+com.example.oya.app-cardview-1.0.0-36 C:\Users\Bryan Russell\.gradle\caches\transforms-3\ad8d5209a4cde2d4744746c695d15a7e\transformed\cardview-1.0.0\res
+com.example.oya.app-jetified-emoji2-1.2.0-37 C:\Users\Bryan Russell\.gradle\caches\transforms-3\aea15878c193954a535b14d052630659\transformed\jetified-emoji2-1.2.0\res
+com.example.oya.app-jetified-glide-4.12.0-38 C:\Users\Bryan Russell\.gradle\caches\transforms-3\aea38822b9e7aa5144aebfe2e2f5c0dd\transformed\jetified-glide-4.12.0\res
 com.example.oya.app-jetified-lifecycle-runtime-ktx-2.6.2-39 C:\Users\Bryan Russell\.gradle\caches\transforms-3\b88765637c2a855bd12b89506c503eb1\transformed\jetified-lifecycle-runtime-ktx-2.6.2\res
 com.example.oya.app-jetified-lifecycle-livedata-core-ktx-2.6.2-40 C:\Users\Bryan Russell\.gradle\caches\transforms-3\b90796039ca7b752df6ce8b2ea5f461a\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\res
 com.example.oya.app-jetified-lottie-5.2.0-41 C:\Users\Bryan Russell\.gradle\caches\transforms-3\be8c4fd9c1252cda3f24fab0bf0b9909\transformed\jetified-lottie-5.2.0\res

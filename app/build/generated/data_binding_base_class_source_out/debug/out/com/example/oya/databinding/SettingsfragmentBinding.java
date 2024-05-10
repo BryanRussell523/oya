@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -23,61 +23,110 @@ public final class SettingsfragmentBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView about;
+  public final CardView cardView;
 
   @NonNull
-  public final AppCompatButton account;
+  public final RelativeLayout chatSettings;
 
   @NonNull
-  public final RelativeLayout accountlayout;
+  public final ImageView chatSettingsicon;
 
   @NonNull
-  public final AppCompatButton avatar;
+  public final TextView des;
 
   @NonNull
-  public final AppCompatButton invite;
+  public final RelativeLayout descriptionLayout;
 
   @NonNull
-  public final AppCompatButton logout;
+  public final ImageView editProfile;
 
   @NonNull
-  public final ImageView profileImage;
+  public final RelativeLayout help;
 
   @NonNull
-  public final RelativeLayout profilelayout;
+  public final ImageView helpIcon;
+
+  @NonNull
+  public final RelativeLayout invite;
+
+  @NonNull
+  public final ImageView inviteIcon;
+
+  @NonNull
+  public final RelativeLayout languageSettings;
+
+  @NonNull
+  public final ImageView languageSettingsicon;
+
+  @NonNull
+  public final RelativeLayout logout;
+
+  @NonNull
+  public final ImageView logoutIcon;
+
+  @NonNull
+  public final RelativeLayout notificationSettings;
+
+  @NonNull
+  public final ImageView notificationSettingsIcon;
+
+  @NonNull
+  public final Switch notificationSwitch;
+
+  @NonNull
+  public final TextView phone;
+
+  @NonNull
+  public final RelativeLayout privacySettings;
+
+  @NonNull
+  public final ImageView privacySettingsicon;
 
   @NonNull
   public final RelativeLayout relativelayout1;
 
   @NonNull
-  public final RelativeLayout relativelayout2;
+  public final ImageView userImage;
 
   @NonNull
-  public final TextView username;
+  public final TextView userName;
 
-  @NonNull
-  public final CardView viewuserimage;
-
-  private SettingsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull TextView about,
-      @NonNull AppCompatButton account, @NonNull RelativeLayout accountlayout,
-      @NonNull AppCompatButton avatar, @NonNull AppCompatButton invite,
-      @NonNull AppCompatButton logout, @NonNull ImageView profileImage,
-      @NonNull RelativeLayout profilelayout, @NonNull RelativeLayout relativelayout1,
-      @NonNull RelativeLayout relativelayout2, @NonNull TextView username,
-      @NonNull CardView viewuserimage) {
+  private SettingsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull CardView cardView,
+      @NonNull RelativeLayout chatSettings, @NonNull ImageView chatSettingsicon,
+      @NonNull TextView des, @NonNull RelativeLayout descriptionLayout,
+      @NonNull ImageView editProfile, @NonNull RelativeLayout help, @NonNull ImageView helpIcon,
+      @NonNull RelativeLayout invite, @NonNull ImageView inviteIcon,
+      @NonNull RelativeLayout languageSettings, @NonNull ImageView languageSettingsicon,
+      @NonNull RelativeLayout logout, @NonNull ImageView logoutIcon,
+      @NonNull RelativeLayout notificationSettings, @NonNull ImageView notificationSettingsIcon,
+      @NonNull Switch notificationSwitch, @NonNull TextView phone,
+      @NonNull RelativeLayout privacySettings, @NonNull ImageView privacySettingsicon,
+      @NonNull RelativeLayout relativelayout1, @NonNull ImageView userImage,
+      @NonNull TextView userName) {
     this.rootView = rootView;
-    this.about = about;
-    this.account = account;
-    this.accountlayout = accountlayout;
-    this.avatar = avatar;
+    this.cardView = cardView;
+    this.chatSettings = chatSettings;
+    this.chatSettingsicon = chatSettingsicon;
+    this.des = des;
+    this.descriptionLayout = descriptionLayout;
+    this.editProfile = editProfile;
+    this.help = help;
+    this.helpIcon = helpIcon;
     this.invite = invite;
+    this.inviteIcon = inviteIcon;
+    this.languageSettings = languageSettings;
+    this.languageSettingsicon = languageSettingsicon;
     this.logout = logout;
-    this.profileImage = profileImage;
-    this.profilelayout = profilelayout;
+    this.logoutIcon = logoutIcon;
+    this.notificationSettings = notificationSettings;
+    this.notificationSettingsIcon = notificationSettingsIcon;
+    this.notificationSwitch = notificationSwitch;
+    this.phone = phone;
+    this.privacySettings = privacySettings;
+    this.privacySettingsicon = privacySettingsicon;
     this.relativelayout1 = relativelayout1;
-    this.relativelayout2 = relativelayout2;
-    this.username = username;
-    this.viewuserimage = viewuserimage;
+    this.userImage = userImage;
+    this.userName = userName;
   }
 
   @Override
@@ -107,51 +156,123 @@ public final class SettingsfragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.about;
-      TextView about = ViewBindings.findChildViewById(rootView, id);
-      if (about == null) {
+      id = R.id.cardView;
+      CardView cardView = ViewBindings.findChildViewById(rootView, id);
+      if (cardView == null) {
         break missingId;
       }
 
-      id = R.id.account;
-      AppCompatButton account = ViewBindings.findChildViewById(rootView, id);
-      if (account == null) {
+      id = R.id.chatSettings;
+      RelativeLayout chatSettings = ViewBindings.findChildViewById(rootView, id);
+      if (chatSettings == null) {
         break missingId;
       }
 
-      id = R.id.accountlayout;
-      RelativeLayout accountlayout = ViewBindings.findChildViewById(rootView, id);
-      if (accountlayout == null) {
+      id = R.id.chatSettingsicon;
+      ImageView chatSettingsicon = ViewBindings.findChildViewById(rootView, id);
+      if (chatSettingsicon == null) {
         break missingId;
       }
 
-      id = R.id.avatar;
-      AppCompatButton avatar = ViewBindings.findChildViewById(rootView, id);
-      if (avatar == null) {
+      id = R.id.des;
+      TextView des = ViewBindings.findChildViewById(rootView, id);
+      if (des == null) {
+        break missingId;
+      }
+
+      id = R.id.descriptionLayout;
+      RelativeLayout descriptionLayout = ViewBindings.findChildViewById(rootView, id);
+      if (descriptionLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.editProfile;
+      ImageView editProfile = ViewBindings.findChildViewById(rootView, id);
+      if (editProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.help;
+      RelativeLayout help = ViewBindings.findChildViewById(rootView, id);
+      if (help == null) {
+        break missingId;
+      }
+
+      id = R.id.helpIcon;
+      ImageView helpIcon = ViewBindings.findChildViewById(rootView, id);
+      if (helpIcon == null) {
         break missingId;
       }
 
       id = R.id.invite;
-      AppCompatButton invite = ViewBindings.findChildViewById(rootView, id);
+      RelativeLayout invite = ViewBindings.findChildViewById(rootView, id);
       if (invite == null) {
         break missingId;
       }
 
+      id = R.id.inviteIcon;
+      ImageView inviteIcon = ViewBindings.findChildViewById(rootView, id);
+      if (inviteIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.languageSettings;
+      RelativeLayout languageSettings = ViewBindings.findChildViewById(rootView, id);
+      if (languageSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.languageSettingsicon;
+      ImageView languageSettingsicon = ViewBindings.findChildViewById(rootView, id);
+      if (languageSettingsicon == null) {
+        break missingId;
+      }
+
       id = R.id.logout;
-      AppCompatButton logout = ViewBindings.findChildViewById(rootView, id);
+      RelativeLayout logout = ViewBindings.findChildViewById(rootView, id);
       if (logout == null) {
         break missingId;
       }
 
-      id = R.id.profile_image;
-      ImageView profileImage = ViewBindings.findChildViewById(rootView, id);
-      if (profileImage == null) {
+      id = R.id.logoutIcon;
+      ImageView logoutIcon = ViewBindings.findChildViewById(rootView, id);
+      if (logoutIcon == null) {
         break missingId;
       }
 
-      id = R.id.profilelayout;
-      RelativeLayout profilelayout = ViewBindings.findChildViewById(rootView, id);
-      if (profilelayout == null) {
+      id = R.id.notificationSettings;
+      RelativeLayout notificationSettings = ViewBindings.findChildViewById(rootView, id);
+      if (notificationSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.notificationSettingsIcon;
+      ImageView notificationSettingsIcon = ViewBindings.findChildViewById(rootView, id);
+      if (notificationSettingsIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.notificationSwitch;
+      Switch notificationSwitch = ViewBindings.findChildViewById(rootView, id);
+      if (notificationSwitch == null) {
+        break missingId;
+      }
+
+      id = R.id.phone;
+      TextView phone = ViewBindings.findChildViewById(rootView, id);
+      if (phone == null) {
+        break missingId;
+      }
+
+      id = R.id.privacySettings;
+      RelativeLayout privacySettings = ViewBindings.findChildViewById(rootView, id);
+      if (privacySettings == null) {
+        break missingId;
+      }
+
+      id = R.id.privacySettingsicon;
+      ImageView privacySettingsicon = ViewBindings.findChildViewById(rootView, id);
+      if (privacySettingsicon == null) {
         break missingId;
       }
 
@@ -161,27 +282,23 @@ public final class SettingsfragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.relativelayout2;
-      RelativeLayout relativelayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (relativelayout2 == null) {
+      id = R.id.userImage;
+      ImageView userImage = ViewBindings.findChildViewById(rootView, id);
+      if (userImage == null) {
         break missingId;
       }
 
-      id = R.id.username;
-      TextView username = ViewBindings.findChildViewById(rootView, id);
-      if (username == null) {
+      id = R.id.userName;
+      TextView userName = ViewBindings.findChildViewById(rootView, id);
+      if (userName == null) {
         break missingId;
       }
 
-      id = R.id.viewuserimage;
-      CardView viewuserimage = ViewBindings.findChildViewById(rootView, id);
-      if (viewuserimage == null) {
-        break missingId;
-      }
-
-      return new SettingsfragmentBinding((RelativeLayout) rootView, about, account, accountlayout,
-          avatar, invite, logout, profileImage, profilelayout, relativelayout1, relativelayout2,
-          username, viewuserimage);
+      return new SettingsfragmentBinding((RelativeLayout) rootView, cardView, chatSettings,
+          chatSettingsicon, des, descriptionLayout, editProfile, help, helpIcon, invite, inviteIcon,
+          languageSettings, languageSettingsicon, logout, logoutIcon, notificationSettings,
+          notificationSettingsIcon, notificationSwitch, phone, privacySettings, privacySettingsicon,
+          relativelayout1, userImage, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

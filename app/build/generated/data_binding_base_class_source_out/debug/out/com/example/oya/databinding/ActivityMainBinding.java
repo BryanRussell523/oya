@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,22 +23,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final ImageView imageView2;
-
-  @NonNull
   public final ConstraintLayout layout;
 
-  @NonNull
-  public final TextView textView2;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
-      @NonNull ImageView imageView2, @NonNull ConstraintLayout layout,
-      @NonNull TextView textView2) {
+      @NonNull ConstraintLayout layout) {
     this.rootView = rootView;
     this.imageView = imageView;
-    this.imageView2 = imageView2;
     this.layout = layout;
-    this.textView2 = textView2;
   }
 
   @Override
@@ -75,22 +65,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
       ConstraintLayout layout = (ConstraintLayout) rootView;
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, imageView, imageView2, layout,
-          textView2);
+      return new ActivityMainBinding((ConstraintLayout) rootView, imageView, layout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

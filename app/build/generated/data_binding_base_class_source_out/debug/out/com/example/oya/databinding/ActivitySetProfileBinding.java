@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.airbnb.lottie.LottieAnimationView;
@@ -22,7 +21,7 @@ import java.lang.String;
 
 public final class ActivitySetProfileBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final LottieAnimationView buttonAnimation;
@@ -34,39 +33,44 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   public final CardView cardView;
 
   @NonNull
-  public final ImageView getuserimageview;
+  public final EditText descInput;
 
   @NonNull
-  public final ImageView profilepanel;
+  public final RelativeLayout relativelayout2;
 
   @NonNull
   public final RelativeLayout saveprofile;
 
   @NonNull
-  public final TextView textView3;
+  public final RelativeLayout setProfile;
+
+  @NonNull
+  public final ImageView userImage;
 
   @NonNull
   public final EditText usernameInput;
 
-  private ActivitySetProfileBinding(@NonNull ConstraintLayout rootView,
+  private ActivitySetProfileBinding(@NonNull RelativeLayout rootView,
       @NonNull LottieAnimationView buttonAnimation, @NonNull TextView buttonText,
-      @NonNull CardView cardView, @NonNull ImageView getuserimageview,
-      @NonNull ImageView profilepanel, @NonNull RelativeLayout saveprofile,
-      @NonNull TextView textView3, @NonNull EditText usernameInput) {
+      @NonNull CardView cardView, @NonNull EditText descInput,
+      @NonNull RelativeLayout relativelayout2, @NonNull RelativeLayout saveprofile,
+      @NonNull RelativeLayout setProfile, @NonNull ImageView userImage,
+      @NonNull EditText usernameInput) {
     this.rootView = rootView;
     this.buttonAnimation = buttonAnimation;
     this.buttonText = buttonText;
     this.cardView = cardView;
-    this.getuserimageview = getuserimageview;
-    this.profilepanel = profilepanel;
+    this.descInput = descInput;
+    this.relativelayout2 = relativelayout2;
     this.saveprofile = saveprofile;
-    this.textView3 = textView3;
+    this.setProfile = setProfile;
+    this.userImage = userImage;
     this.usernameInput = usernameInput;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -109,15 +113,15 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.getuserimageview;
-      ImageView getuserimageview = ViewBindings.findChildViewById(rootView, id);
-      if (getuserimageview == null) {
+      id = R.id.descInput;
+      EditText descInput = ViewBindings.findChildViewById(rootView, id);
+      if (descInput == null) {
         break missingId;
       }
 
-      id = R.id.profilepanel;
-      ImageView profilepanel = ViewBindings.findChildViewById(rootView, id);
-      if (profilepanel == null) {
+      id = R.id.relativelayout2;
+      RelativeLayout relativelayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (relativelayout2 == null) {
         break missingId;
       }
 
@@ -127,9 +131,11 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      RelativeLayout setProfile = (RelativeLayout) rootView;
+
+      id = R.id.userImage;
+      ImageView userImage = ViewBindings.findChildViewById(rootView, id);
+      if (userImage == null) {
         break missingId;
       }
 
@@ -139,8 +145,8 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySetProfileBinding((ConstraintLayout) rootView, buttonAnimation, buttonText,
-          cardView, getuserimageview, profilepanel, saveprofile, textView3, usernameInput);
+      return new ActivitySetProfileBinding((RelativeLayout) rootView, buttonAnimation, buttonText,
+          cardView, descInput, relativelayout2, saveprofile, setProfile, userImage, usernameInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

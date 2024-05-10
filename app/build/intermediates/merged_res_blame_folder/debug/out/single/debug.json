@@ -1,31 +1,55 @@
 [
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_nonetwork.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\nonetwork.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_caledarforward.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\caledarforward.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_buyairtime.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\buyairtime.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_delete.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\delete.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_clock.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\clock.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_16.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_16.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_menu.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_calculator.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_calculator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_filled_wallet.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\filled_wallet.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\font_nunito.ttf.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\font\\nunito.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_vefify_otp.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_vefify_otp.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_check_internet_dialog.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\check_internet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_prosettingsfragment.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\prosettingsfragment.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_tools.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\tools.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chatactionbar.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chatactionbar.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_blocked.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\blocked.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_purple_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\purple_color.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -36,48 +60,20 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\menucamera.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_moreinfoonuser.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\moreinfoonuser.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_send.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\send.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_circlebutton.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\circlebutton.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_9.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_9.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_1.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_1.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_oyasmile.jpg.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\oyasmile.jpg"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_cashout.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\cashout.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\menu_menuofuserchat.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\menuofuserchat.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_mainwallet.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\mainwallet.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_switchtopro.jpg.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\switchtopro.jpg"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_groupchat.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\groupchat.png"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_floatingactionbuttonbackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\floatingactionbuttonbackground.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_more.png.flat",
@@ -96,20 +92,24 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\gallery.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_passwordtextboxbackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\passwordtextboxbackground.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_usernameicon.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\usernameicon.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_contact.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\contact.png"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_button_normal.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\button_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_box_shadow.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\box_shadow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_editprofile.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_editprofile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_del.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\del.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_notes.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\notes.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_nonetworkpanel.xml.flat",
@@ -120,10 +120,6 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\camera.png"
     },
     {
-        "merged": "com.example.oya.app-merged_res-60:/layout_item_message.xml.flat",
-        "source": "com.example.oya.app-main-62:/layout/item_message.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_airtime.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\airtime.png"
     },
@@ -132,56 +128,60 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\font\\abeezee.ttf"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_notes.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_notes.xml"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_userviewlayout.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\userviewlayout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_userprofilepanel.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\userprofilepanel.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_signinbuttonback.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\signinbuttonback.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_7.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_7.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_popupmenubackground.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\popupmenubackground.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_walletbackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\walletbackground.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_chats_custom_menu.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\chats_custom_menu.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_sendmessage.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\sendmessage.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_sendmoneybackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\sendmoneybackground.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_invite.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\invite.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_archived_chats_custom_menu_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\archived_chats_custom_menu_item.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_voicemessage.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\voicemessage.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_historybackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\historybackground.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_orange_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\orange_color.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_emailicon.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\emailicon.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_selectusers.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_selectusers.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chatmenu.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chatmenu.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_edit.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\edit.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_note_pad_menu_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\note_pad_menu_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\menu_notepad_menu.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\notepad_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -196,6 +196,10 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_teal_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\teal_color.xml"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\xml\\backup_rules.xml"
     },
@@ -204,88 +208,120 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\search.png"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_calculator.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\calculator.png"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-mdpi\\ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_10.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_10.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_green_button_background_ripple.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\green_button_background_ripple.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_promodeprofilepanel.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\promodeprofilepanel.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_videochat.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\videochat.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_extra.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\extra.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_status.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\status.png"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_notepad_custom_menu.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\notepad_custom_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_attach.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\attach.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_walletfragment.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\walletfragment.xml"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_videocall.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\videocall.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_filledcalendar.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\filledcalendar.png"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_settingsfragment.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\settingsfragment.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_signupbackpic.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\signupbackpic.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_blockcontact.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\blockcontact.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_pay_bills.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_pay_bills.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_closeprofile.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\closeprofile.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_grey_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\grey_color.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_chatsfragment.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\chatsfragment.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_passwordicon.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\passwordicon.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_editcontact.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\editcontact.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_2.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_2.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_user_chat.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_user_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_calendar.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\calendar.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_8.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_8.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_lavender_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\lavender_color.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_defaultprfilepic.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\defaultprfilepic.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_help.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\help.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_chat.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_chat.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_wallet_action_panel.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\wallet_action_panel.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_introfor_professional_mode.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_introfor_professional_mode.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_walletnotification.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\walletnotification.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_slideshow_black_24dp.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\ic_slideshow_black_24dp.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_favorites.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chatbutton.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chatbutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_moments_settings.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\moments_settings.png"
+    },
+    {
+        "merged": "com.example.oya.app-merged_res-60:/layout_activity_calendar.xml.flat",
+        "source": "com.example.oya.app-main-62:/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_share_note.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_share_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_note_item_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\note_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chatsettings.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chatsettings.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_noconnection.xml.flat",
@@ -296,68 +332,76 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\logout.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\menu_menuforselectuser.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\menuforselectuser.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_invite.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\invite.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_5.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_5.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_splash_screen_pro.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_splash_screen_pro.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_transactionhistory.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\transactionhistory.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_signupphone.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\signupphone.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_calendarbackward.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\calendarbackward.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_topup.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\topup.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_changewallpaper.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\changewallpaper.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chats.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chats.png"
     },
     {
-        "merged": "com.example.oya.app-merged_res-60:/layout_activity_user_touserchat.xml.flat",
-        "source": "com.example.oya.app-main-62:/layout/activity_user_touserchat.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_12.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_12.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_senderchatlayout.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\senderchatlayout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_update_profile.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_update_profile.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_textboxbackground.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\textboxbackground.xml"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_games.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\games.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_note_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\note_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_emoji.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\emoji.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_signuptextbox.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\signuptextbox.xml"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_settings_black_24dp.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\ic_settings_black_24dp.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_filled_chats.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\filled_chats.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_emailtextboxbackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\emailtextboxbackground.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_pink_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\pink_color.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_13.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_13.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_chat.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\chat.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\raw_button_loading_white.json.flat",
@@ -368,24 +412,16 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_circlebutton_normal.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\circlebutton_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_momentsfragment.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\momentsfragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_sendmoney.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\sendmoney.png"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_mainchatlayout.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\mainchatlayout.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_voicecall.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\voicecall.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_yellow_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\yellow_color.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_button_pressed.xml.flat",
@@ -400,36 +436,20 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\popup_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_loginpanel.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\loginpanel.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_history.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\history.png"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_professional_mode.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_professional_mode.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_set_profile.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_set_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_4.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_4.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_item_message.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\item_message.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_call.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\call.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_introfor_chat_mode.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_introfor_chat_mode.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_white_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\white_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_homesettings_filled.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\homesettings_filled.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_audio.png.flat",
@@ -440,92 +460,124 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_filledcalculator.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\filledcalculator.png"
+    },
+    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_senderchatbubble.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\senderchatbubble.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\menu_menu.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\menu.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_filled_call.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\filled_call.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_11.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_11.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_editprofile.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\editprofile.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_authbackground.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\authbackground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_calendar.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_homesettings.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\homesettings.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_edittext.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_calendar_day_layout.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\calendar_day_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_newnote.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\newnote.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_notepad_content_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\notepad_content_background.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_side_nav_bar.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\side_nav_bar.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_blocked_chats_custom_menu_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\blocked_chats_custom_menu_item.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_user_touserchat.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_user_touserchat.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_select.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\select.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_gallery_black_24dp.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\ic_gallery_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_camera_black_24dp.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\ic_camera_black_24dp.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_calls.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\calls.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_settings.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\settings.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_14.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_14.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_open.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\open.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_language.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\language.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_semicircle.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\semicircle.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_moments_custom_menu_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\moments_custom_menu_item.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_inviteuser.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\inviteuser.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_fillednote.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\fillednote.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_cocoaaice.jpg.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\cocoaaice.jpg"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar.png"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_paybillsbackground.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\paybillsbackground.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_send_money.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_send_money.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_search_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\search_background.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_newchat.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\newchat.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_3.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_3.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_wallets.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\wallets.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_lemon_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\lemon_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_profilesettings.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\profilesettings.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_button.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\button.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_account.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\account.xml"
-    },
-    {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_task_event_item_layout.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\task_event_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_privacy.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\privacy.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_recieverchatbubble.xml.flat",
@@ -540,72 +592,84 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\bills.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_signuplogo.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\signuplogo.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_walletfilter.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\walletfilter.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_6.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_6.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_favorite_chats_custom_menu_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\favorite_chats_custom_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_notepad_title_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\notepad_title_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_sharenote.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\sharenote.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_close.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\close.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_taskcalendar.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\taskcalendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_dialog_menu_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\dialog_menu_background.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_wallet.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\wallet.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_account_settings.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_account_settings.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_edit_note.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_edit_note.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_buy_airtime.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_buy_airtime.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\font_poppins.ttf.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\font\\poppins.ttf"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_avatar_15.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\avatar_15.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\xml\\file_paths.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_statuscamera.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\statuscamera.png"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_circlebutton_pressed.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\circlebutton_pressed.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\menu_user_chat_menu.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\menu\\user_chat_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_document.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\document.png"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_cashin.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\cashin.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_profilepanel.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\profilepanel.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_green_color.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\green_color.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_prosplash.jpg.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\prosplash.jpg"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_defaultprofilepic.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\defaultprofilepic.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_chat_item.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\chat_item.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_notification.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\notification.png"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_location.png.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\location.png"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_users.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_users.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_logo.jpeg.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\logo.jpeg"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_recent_chat_item.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\recent_chat_item.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_receiverchatlayout.xml.flat",
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\receiverchatlayout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_history.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_history.xml"
     },
     {
         "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_ic_launcher_foreground.xml.flat",
@@ -616,11 +680,23 @@
         "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_arrowforward.xml.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\arrowforward.xml"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_notepad_image_background.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\notepad_image_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_phone.png.flat",
-        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\phone.png"
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_wallet_transactionhistory_container.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\wallet_transactionhistory_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_note_pad.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_note_pad.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\layout_activity_user_profile_view.xml.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\layout\\activity_user_profile_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-merged_res-60:\\drawable_splash.png.flat",
+        "source": "C:\\Users\\Bryan Russell\\.gradle\\daemon\\8.4\\com.example.oya.app-main-62:\\drawable\\splash.png"
     }
 ]

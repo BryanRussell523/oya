@@ -4,10 +4,12 @@ package com.example.oya.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -21,20 +23,37 @@ public final class ChatsfragmentBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageButton fab;
+  public final RelativeLayout layout;
 
   @NonNull
-  public final ImageButton fab2;
+  public final ImageView more;
 
   @NonNull
-  public final RecyclerView recyclerview;
+  public final TextView myapptext;
 
-  private ChatsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull ImageButton fab,
-      @NonNull ImageButton fab2, @NonNull RecyclerView recyclerview) {
+  @NonNull
+  public final ImageView newChat;
+
+  @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final ImageView search;
+
+  @NonNull
+  public final Toolbar toolbar;
+
+  private ChatsfragmentBinding(@NonNull RelativeLayout rootView, @NonNull RelativeLayout layout,
+      @NonNull ImageView more, @NonNull TextView myapptext, @NonNull ImageView newChat,
+      @NonNull RecyclerView recyclerView, @NonNull ImageView search, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.fab = fab;
-    this.fab2 = fab2;
-    this.recyclerview = recyclerview;
+    this.layout = layout;
+    this.more = more;
+    this.myapptext = myapptext;
+    this.newChat = newChat;
+    this.recyclerView = recyclerView;
+    this.search = search;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -64,25 +83,46 @@ public final class ChatsfragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fab;
-      ImageButton fab = ViewBindings.findChildViewById(rootView, id);
-      if (fab == null) {
+      RelativeLayout layout = (RelativeLayout) rootView;
+
+      id = R.id.more;
+      ImageView more = ViewBindings.findChildViewById(rootView, id);
+      if (more == null) {
         break missingId;
       }
 
-      id = R.id.fab2;
-      ImageButton fab2 = ViewBindings.findChildViewById(rootView, id);
-      if (fab2 == null) {
+      id = R.id.myapptext;
+      TextView myapptext = ViewBindings.findChildViewById(rootView, id);
+      if (myapptext == null) {
         break missingId;
       }
 
-      id = R.id.recyclerview;
-      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerview == null) {
+      id = R.id.newChat;
+      ImageView newChat = ViewBindings.findChildViewById(rootView, id);
+      if (newChat == null) {
         break missingId;
       }
 
-      return new ChatsfragmentBinding((RelativeLayout) rootView, fab, fab2, recyclerview);
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.search;
+      ImageView search = ViewBindings.findChildViewById(rootView, id);
+      if (search == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ChatsfragmentBinding((RelativeLayout) rootView, layout, more, myapptext, newChat,
+          recyclerView, search, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

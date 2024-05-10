@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--THIS LAYOUT IS CREATED FOR USER TO SEND MESSAGE. 
+<!--THIS LAYOUT IS CREATED FOR USER TO SEND MESSAGE.
 THIS LAYOUT WILL BE CALLED IN THE MAIN CODE TO DISPLAY ON USER TO USER CHAT-->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/item_sender_message"
+    android:id="@+id/messageLayout"
+    android:layout_marginBottom="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true">
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/senderchatbubble"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <TextView
-                android:id="@+id/sender_message"
-                android:background="@drawable/senderchatbubble"
+                android:id="@+id/messageText"
+               android:fontFamily="@font/nunito"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sender Message"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:layout_alignParentEnd="true"
-                android:padding="16dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="5dp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:padding="15dp"/>
+            <TextView
+                android:id="@+id/messageTime"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:00pm" />
+        </LinearLayout>
     </RelativeLayout>
 
-        
-
-    
-</RelativeLayout>
+</LinearLayout>

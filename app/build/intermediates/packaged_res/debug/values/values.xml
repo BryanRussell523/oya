@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="_certs">
+        <item>@array/_certs_dev</item>
+        <item>@array/_certs_prod</item>
+    </array>
+    <string-array name="_certs_dev">
+        <item>
+            
+        </item>
+    </string-array>
+    <string-array name="_certs_prod">
+        <item>
+            
+        </item>
+    </string-array>
+    <color name="Lightgrey">#A4A4A4</color>
+    <color name="Opacity_green">#BBFACD</color>
+    <color name="Opacity_lavender">#BBCDFA</color>
+    <color name="Opacity_lemon">#F1FABB</color>
+    <color name="Opacity_lightergrey">#E9EAEB</color>
+    <color name="Opacity_orange">#FABBBB</color>
+    <color name="Opacity_pink">#F5BBFA</color>
+    <color name="Opacity_purple">#80EECFFE</color>
+    <color name="Opacity_teal">#BBF6FA</color>
+    <color name="Opacity_white">#FFFFFFFF</color>
+    <color name="Opacity_yellow">#FAE8BB</color>
     <color name="black">#FF000000</color>
-    <color name="brown">#8b4513</color>
-    <color name="darkblue">#483d8b</color>
-    <color name="green">#0bda51</color>
-    <color name="grey">#dcdcdc</color>
+    <color name="blue">#0467E9</color>
+    <color name="darkerGreen">#00B383</color>
+    <color name="green">#BBFACD</color>
+    <color name="grey">#676E74</color>
     <color name="ic_launcher_background">#FFFFFF</color>
-    <color name="lightblue">#00aae4</color>
-    <color name="peach">#fa8072</color>
-    <color name="purple">#9C27B0</color>
+    <color name="lavender">#BBCDFA</color>
+    <color name="lemon">#F1FABB</color>
+    <color name="lightblue">#0467E9</color>
+    <color name="lighterBlue">#E3F2FD</color>
+    <color name="lightergrey">#E9EAEB</color>
+    <color name="offwhite">#F0F1F3</color>
+    <color name="orange">#FABBBB</color>
+    <color name="pink">#F5BBFA</color>
+    <color name="purple">#DABBFA</color>
     <color name="red">#ff0000</color>
+    <color name="skyblue">#EBF3FE</color>
+    <color name="teal">#BBF6FA</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FAE8BB</color>
     <string name="action_settings">Settings</string>
     <string name="app_name">Oya</string>
     <string name="default_web_client_id" translatable="false">845764496193-ns21jpnfdqv3tvjku5i30kdk9dsl2koi.apps.googleusercontent.com</string>
@@ -49,11 +83,20 @@
     <style name="Button.blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/lightblue</item>
     </style>
-    <style name="Theme.Oya" parent="Base.Theme.Oya"/>
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+
+    </style>
+    <style name="Theme.Oya" parent="Base.Theme.Oya">
+        <item name="android:fontFamily">@font/abeezee</item>
+    </style>
     <style name="Theme.Oya.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.Oya.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Oya.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.Oya.homeActivity" parent="ThemeOverlay.AppCompat.Light">
+        <item name="homeLayout">@color/white</item>
+
+    </style>
 </resources>

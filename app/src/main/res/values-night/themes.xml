@@ -6,4 +6,7 @@
         <!-- Defining that new color in ColorPrimaryDark -->
         <item name="colorPrimaryDark">@color/lightblue</item>
     </style>
+    <style name="Theme.Oya.homeActivity" parent="ThemeOverlay.AppCompat.Light">
+        <item name="homeLayout">@color/white</item>
+    </style>
 </resources>

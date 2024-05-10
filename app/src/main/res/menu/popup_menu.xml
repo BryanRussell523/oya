@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/gallery"
-        android:icon="@drawable/gallery"
-        android:title="Gallery"/>
-    <item android:id="@+id/avatar"
-        android:icon="@drawable/avatar"
-        android:title="Avatar"/>
-    <item android:id="@+id/wallet"
-        android:title="Wallet"
-        android:icon="@drawable/wallet" />
-    <item android:id="@+id/contact"
-        android:icon="@drawable/contact"
-        android:title="Contact"/>
-    <item android:id="@+id/location"
-        android:icon="@drawable/location"
-        android:title="Location"/>
+
 </menu>

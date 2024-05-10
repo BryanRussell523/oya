@@ -2,47 +2,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layout"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/myapptext"
+               android:fontFamily="@font/nunito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oya"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+           <ImageView
+               android:id="@+id/search"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/search"
+               android:layout_marginRight="20dp"
+               android:layout_toLeftOf="@id/newChat"/>
+            <ImageView
+                android:id="@+id/newChat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/newchat"
+                android:layout_toLeftOf="@id/more"/>
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/more"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="0dp"
-        tools:listitem="@layout/userviewlayout"
+        android:layout_below="@id/toolbar"
+        tools:listitem="@layout/recent_chat_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerview">
+        android:id="@+id/recyclerView">
     </androidx.recyclerview.widget.RecyclerView>
-    <RelativeLayout
-        android:paddingBottom="30dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom|end">
-
-        <ImageButton
-            android:id="@+id/fab"
-            android:layout_width="57dp"
-            android:layout_height="57dp"
-            android:layout_centerInParent="true"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/floatingactionbuttonbackground"
-            android:elevation="10dp"
-            android:src="@drawable/newchat" />
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:paddingBottom="30dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom|end">
-        <ImageButton
-            android:id="@+id/fab2"
-            android:layout_width="57dp"
-            android:layout_height="57dp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/walletbackground"
-            android:elevation="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="70dp"
-            android:src="@drawable/wallet" />
-    </RelativeLayout>
 </RelativeLayout>

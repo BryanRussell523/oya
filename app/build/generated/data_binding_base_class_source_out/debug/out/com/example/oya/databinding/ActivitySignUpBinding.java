@@ -10,11 +10,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.oya.R;
+import com.hbb20.CountryCodePicker;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,9 +22,6 @@ import java.lang.String;
 public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
-
-  @NonNull
-  public final EditText OTP;
 
   @NonNull
   public final RelativeLayout activitySignUp;
@@ -36,39 +33,52 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView buttonText;
 
   @NonNull
+  public final CountryCodePicker countryCodePicker;
+
+  @NonNull
   public final RelativeLayout getOTP;
 
   @NonNull
   public final ImageView imageView4;
 
   @NonNull
+  public final TextView number;
+
+  @NonNull
   public final EditText phonenumber;
+
+  @NonNull
+  public final RelativeLayout relativelayout1;
 
   @NonNull
   public final RelativeLayout signuppanel;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView textView2;
 
   @NonNull
-  public final AppCompatButton verifyOTPBtn;
+  public final TextView textView3;
 
-  private ActivitySignUpBinding(@NonNull RelativeLayout rootView, @NonNull EditText OTP,
+  private ActivitySignUpBinding(@NonNull RelativeLayout rootView,
       @NonNull RelativeLayout activitySignUp, @NonNull LottieAnimationView buttonAnimation,
-      @NonNull TextView buttonText, @NonNull RelativeLayout getOTP, @NonNull ImageView imageView4,
-      @NonNull EditText phonenumber, @NonNull RelativeLayout signuppanel,
-      @NonNull TextView textView3, @NonNull AppCompatButton verifyOTPBtn) {
+      @NonNull TextView buttonText, @NonNull CountryCodePicker countryCodePicker,
+      @NonNull RelativeLayout getOTP, @NonNull ImageView imageView4, @NonNull TextView number,
+      @NonNull EditText phonenumber, @NonNull RelativeLayout relativelayout1,
+      @NonNull RelativeLayout signuppanel, @NonNull TextView textView2,
+      @NonNull TextView textView3) {
     this.rootView = rootView;
-    this.OTP = OTP;
     this.activitySignUp = activitySignUp;
     this.buttonAnimation = buttonAnimation;
     this.buttonText = buttonText;
+    this.countryCodePicker = countryCodePicker;
     this.getOTP = getOTP;
     this.imageView4 = imageView4;
+    this.number = number;
     this.phonenumber = phonenumber;
+    this.relativelayout1 = relativelayout1;
     this.signuppanel = signuppanel;
+    this.textView2 = textView2;
     this.textView3 = textView3;
-    this.verifyOTPBtn = verifyOTPBtn;
   }
 
   @Override
@@ -98,12 +108,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.OTP;
-      EditText OTP = ViewBindings.findChildViewById(rootView, id);
-      if (OTP == null) {
-        break missingId;
-      }
-
       RelativeLayout activitySignUp = (RelativeLayout) rootView;
 
       id = R.id.button_animation;
@@ -115,6 +119,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
       id = R.id.buttonText;
       TextView buttonText = ViewBindings.findChildViewById(rootView, id);
       if (buttonText == null) {
+        break missingId;
+      }
+
+      id = R.id.countryCodePicker;
+      CountryCodePicker countryCodePicker = ViewBindings.findChildViewById(rootView, id);
+      if (countryCodePicker == null) {
         break missingId;
       }
 
@@ -130,9 +140,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.number;
+      TextView number = ViewBindings.findChildViewById(rootView, id);
+      if (number == null) {
+        break missingId;
+      }
+
       id = R.id.phonenumber;
       EditText phonenumber = ViewBindings.findChildViewById(rootView, id);
       if (phonenumber == null) {
+        break missingId;
+      }
+
+      id = R.id.relativelayout1;
+      RelativeLayout relativelayout1 = ViewBindings.findChildViewById(rootView, id);
+      if (relativelayout1 == null) {
         break missingId;
       }
 
@@ -142,21 +164,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
         break missingId;
       }
 
-      id = R.id.verifyOTPBtn;
-      AppCompatButton verifyOTPBtn = ViewBindings.findChildViewById(rootView, id);
-      if (verifyOTPBtn == null) {
-        break missingId;
-      }
-
-      return new ActivitySignUpBinding((RelativeLayout) rootView, OTP, activitySignUp,
-          buttonAnimation, buttonText, getOTP, imageView4, phonenumber, signuppanel, textView3,
-          verifyOTPBtn);
+      return new ActivitySignUpBinding((RelativeLayout) rootView, activitySignUp, buttonAnimation,
+          buttonText, countryCodePicker, getOTP, imageView4, number, phonenumber, relativelayout1,
+          signuppanel, textView2, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

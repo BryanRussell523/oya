@@ -29,27 +29,22 @@ public final class UserviewlayoutBinding implements ViewBinding {
   public final CardView cardviewofuser;
 
   @NonNull
-  public final ImageView imageviewofuser;
-
-  @NonNull
   public final TextView nameofuser;
 
   @NonNull
-  public final TextView phone;
+  public final ImageView userImage;
 
   @NonNull
   public final RelativeLayout usersListrelativelayout;
 
   private UserviewlayoutBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout UserItem,
-      @NonNull CardView cardviewofuser, @NonNull ImageView imageviewofuser,
-      @NonNull TextView nameofuser, @NonNull TextView phone,
+      @NonNull CardView cardviewofuser, @NonNull TextView nameofuser, @NonNull ImageView userImage,
       @NonNull RelativeLayout usersListrelativelayout) {
     this.rootView = rootView;
     this.UserItem = UserItem;
     this.cardviewofuser = cardviewofuser;
-    this.imageviewofuser = imageviewofuser;
     this.nameofuser = nameofuser;
-    this.phone = phone;
+    this.userImage = userImage;
     this.usersListrelativelayout = usersListrelativelayout;
   }
 
@@ -88,21 +83,15 @@ public final class UserviewlayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageviewofuser;
-      ImageView imageviewofuser = ViewBindings.findChildViewById(rootView, id);
-      if (imageviewofuser == null) {
-        break missingId;
-      }
-
       id = R.id.nameofuser;
       TextView nameofuser = ViewBindings.findChildViewById(rootView, id);
       if (nameofuser == null) {
         break missingId;
       }
 
-      id = R.id.phone;
-      TextView phone = ViewBindings.findChildViewById(rootView, id);
-      if (phone == null) {
+      id = R.id.userImage;
+      ImageView userImage = ViewBindings.findChildViewById(rootView, id);
+      if (userImage == null) {
         break missingId;
       }
 
@@ -113,7 +102,7 @@ public final class UserviewlayoutBinding implements ViewBinding {
       }
 
       return new UserviewlayoutBinding((LinearLayout) rootView, UserItem, cardviewofuser,
-          imageviewofuser, nameofuser, phone, usersListrelativelayout);
+          nameofuser, userImage, usersListrelativelayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

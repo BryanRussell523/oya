@@ -6,7 +6,11 @@
         <item name="colorPrimaryDark">@color/lightblue</item>
     </style>
     <!-- Defining that new color in ColorPrimaryDark -->
-    <style name="Theme.Oya" parent="Base.Theme.Oya" />
+    <style name="Theme.Oya" parent="Base.Theme.Oya" >
+        <item name="android:fontFamily">@font/abeezee</item>
+    </style>
+
+
 
     <style name="Button.blue" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@color/lightblue</item>
@@ -20,4 +24,11 @@
     <style name="Theme.Oya.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Oya.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Oya.homeActivity" parent="ThemeOverlay.AppCompat.Light">
+        <item name="homeLayout">@color/white</item>
+
+    </style>
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+
+    </style>
 </resources>

@@ -4,9 +4,7 @@ package com.example.oya.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,86 +21,56 @@ public final class WalletfragmentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RelativeLayout Relative;
+  public final ConstraintLayout actionPane;
 
   @NonNull
-  public final TextView airtime;
+  public final ImageView airTime;
 
   @NonNull
-  public final ImageView airtimeicon;
+  public final TextView airTimetext;
 
   @NonNull
-  public final TextView bills;
+  public final ImageView alert;
 
   @NonNull
-  public final ImageView billsicon;
+  public final ImageView bills;
 
   @NonNull
-  public final RelativeLayout buyairtime;
+  public final TextView billsText;
 
   @NonNull
-  public final TextView cardnumber;
+  public final ImageView send;
 
   @NonNull
-  public final ImageButton fab;
+  public final TextView sendtext;
 
   @NonNull
-  public final RelativeLayout history;
+  public final ImageView topUp;
 
   @NonNull
-  public final ImageView historyicon;
+  public final TextView topUptext;
 
   @NonNull
-  public final ImageView imageView3;
-
-  @NonNull
-  public final RelativeLayout paybills;
-
-  @NonNull
-  public final RelativeLayout sendmoney;
-
-  @NonNull
-  public final TextView textView4;
-
-  @NonNull
-  public final TextView textView5;
-
-  @NonNull
-  public final TextView textView6;
-
-  @NonNull
-  public final TextView textView7;
-
-  @NonNull
-  public final TextView texthistory;
+  public final ImageView transactionhistory;
 
   private WalletfragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RelativeLayout Relative, @NonNull TextView airtime, @NonNull ImageView airtimeicon,
-      @NonNull TextView bills, @NonNull ImageView billsicon, @NonNull RelativeLayout buyairtime,
-      @NonNull TextView cardnumber, @NonNull ImageButton fab, @NonNull RelativeLayout history,
-      @NonNull ImageView historyicon, @NonNull ImageView imageView3,
-      @NonNull RelativeLayout paybills, @NonNull RelativeLayout sendmoney,
-      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
-      @NonNull TextView textView7, @NonNull TextView texthistory) {
+      @NonNull ConstraintLayout actionPane, @NonNull ImageView airTime,
+      @NonNull TextView airTimetext, @NonNull ImageView alert, @NonNull ImageView bills,
+      @NonNull TextView billsText, @NonNull ImageView send, @NonNull TextView sendtext,
+      @NonNull ImageView topUp, @NonNull TextView topUptext,
+      @NonNull ImageView transactionhistory) {
     this.rootView = rootView;
-    this.Relative = Relative;
-    this.airtime = airtime;
-    this.airtimeicon = airtimeicon;
+    this.actionPane = actionPane;
+    this.airTime = airTime;
+    this.airTimetext = airTimetext;
+    this.alert = alert;
     this.bills = bills;
-    this.billsicon = billsicon;
-    this.buyairtime = buyairtime;
-    this.cardnumber = cardnumber;
-    this.fab = fab;
-    this.history = history;
-    this.historyicon = historyicon;
-    this.imageView3 = imageView3;
-    this.paybills = paybills;
-    this.sendmoney = sendmoney;
-    this.textView4 = textView4;
-    this.textView5 = textView5;
-    this.textView6 = textView6;
-    this.textView7 = textView7;
-    this.texthistory = texthistory;
+    this.billsText = billsText;
+    this.send = send;
+    this.sendtext = sendtext;
+    this.topUp = topUp;
+    this.topUptext = topUptext;
+    this.transactionhistory = transactionhistory;
   }
 
   @Override
@@ -132,117 +100,75 @@ public final class WalletfragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Relative;
-      RelativeLayout Relative = ViewBindings.findChildViewById(rootView, id);
-      if (Relative == null) {
+      id = R.id.actionPane;
+      ConstraintLayout actionPane = ViewBindings.findChildViewById(rootView, id);
+      if (actionPane == null) {
         break missingId;
       }
 
-      id = R.id.airtime;
-      TextView airtime = ViewBindings.findChildViewById(rootView, id);
-      if (airtime == null) {
+      id = R.id.airTime;
+      ImageView airTime = ViewBindings.findChildViewById(rootView, id);
+      if (airTime == null) {
         break missingId;
       }
 
-      id = R.id.airtimeicon;
-      ImageView airtimeicon = ViewBindings.findChildViewById(rootView, id);
-      if (airtimeicon == null) {
+      id = R.id.airTimetext;
+      TextView airTimetext = ViewBindings.findChildViewById(rootView, id);
+      if (airTimetext == null) {
+        break missingId;
+      }
+
+      id = R.id.alert;
+      ImageView alert = ViewBindings.findChildViewById(rootView, id);
+      if (alert == null) {
         break missingId;
       }
 
       id = R.id.bills;
-      TextView bills = ViewBindings.findChildViewById(rootView, id);
+      ImageView bills = ViewBindings.findChildViewById(rootView, id);
       if (bills == null) {
         break missingId;
       }
 
-      id = R.id.billsicon;
-      ImageView billsicon = ViewBindings.findChildViewById(rootView, id);
-      if (billsicon == null) {
+      id = R.id.billsText;
+      TextView billsText = ViewBindings.findChildViewById(rootView, id);
+      if (billsText == null) {
         break missingId;
       }
 
-      id = R.id.buyairtime;
-      RelativeLayout buyairtime = ViewBindings.findChildViewById(rootView, id);
-      if (buyairtime == null) {
+      id = R.id.send;
+      ImageView send = ViewBindings.findChildViewById(rootView, id);
+      if (send == null) {
         break missingId;
       }
 
-      id = R.id.cardnumber;
-      TextView cardnumber = ViewBindings.findChildViewById(rootView, id);
-      if (cardnumber == null) {
+      id = R.id.sendtext;
+      TextView sendtext = ViewBindings.findChildViewById(rootView, id);
+      if (sendtext == null) {
         break missingId;
       }
 
-      id = R.id.fab;
-      ImageButton fab = ViewBindings.findChildViewById(rootView, id);
-      if (fab == null) {
+      id = R.id.topUp;
+      ImageView topUp = ViewBindings.findChildViewById(rootView, id);
+      if (topUp == null) {
         break missingId;
       }
 
-      id = R.id.history;
-      RelativeLayout history = ViewBindings.findChildViewById(rootView, id);
-      if (history == null) {
+      id = R.id.topUptext;
+      TextView topUptext = ViewBindings.findChildViewById(rootView, id);
+      if (topUptext == null) {
         break missingId;
       }
 
-      id = R.id.historyicon;
-      ImageView historyicon = ViewBindings.findChildViewById(rootView, id);
-      if (historyicon == null) {
+      id = R.id.transactionhistory;
+      ImageView transactionhistory = ViewBindings.findChildViewById(rootView, id);
+      if (transactionhistory == null) {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.paybills;
-      RelativeLayout paybills = ViewBindings.findChildViewById(rootView, id);
-      if (paybills == null) {
-        break missingId;
-      }
-
-      id = R.id.sendmoney;
-      RelativeLayout sendmoney = ViewBindings.findChildViewById(rootView, id);
-      if (sendmoney == null) {
-        break missingId;
-      }
-
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView7;
-      TextView textView7 = ViewBindings.findChildViewById(rootView, id);
-      if (textView7 == null) {
-        break missingId;
-      }
-
-      id = R.id.texthistory;
-      TextView texthistory = ViewBindings.findChildViewById(rootView, id);
-      if (texthistory == null) {
-        break missingId;
-      }
-
-      return new WalletfragmentBinding((ConstraintLayout) rootView, Relative, airtime, airtimeicon,
-          bills, billsicon, buyairtime, cardnumber, fab, history, historyicon, imageView3, paybills,
-          sendmoney, textView4, textView5, textView6, textView7, texthistory);
+      return new WalletfragmentBinding((ConstraintLayout) rootView, actionPane, airTime,
+          airTimetext, alert, bills, billsText, send, sendtext, topUp, topUptext,
+          transactionhistory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
