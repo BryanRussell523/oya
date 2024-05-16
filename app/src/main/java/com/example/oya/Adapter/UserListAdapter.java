@@ -58,7 +58,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
             itemView.setOnClickListener(this);
         }public void bind(UserObject user) {
             this.user = user;
-            nameofuser.setText(user.getName());
+            nameofuser.setText(user.getPhone());
             Log.d("UserListAdapter505", "User Name: " + user.getName());
 
             RequestOptions requestOptions = new RequestOptions()
@@ -76,7 +76,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
             if (user != null) {
                 Context context = itemView.getContext();
                 Intent intent = new Intent(context, UserchatActivity.class);
-                intent.putExtra("USER_ID", user.getUid());
+                intent.putExtra("OTHER_USER_ID", user.getUid());
                 intent.putExtra("USER_PHONE", user.getPhone());
                 intent.putExtra("USER_IMAGE_URL", user.getProfileImageUrl());
                 context.startActivity(intent);
