@@ -145,7 +145,6 @@ public class selectUser extends AppCompatActivity{
                     String description = userSnapshot.child("description").getValue(String.class);
                     String profileImageUrl = userSnapshot.child("image").getValue(String.class);
 
-
                     // Log user details
                     Log.d("FirebaseDataCheck", "User: " + phoneNumber + ", Username: " + username);
 
@@ -208,6 +207,16 @@ public class selectUser extends AppCompatActivity{
         phoneNumber = phoneNumber.replaceAll("^0+", "");
 
         return phoneNumber;
-   }
+    }
+    //    private String normalizePhoneNumber(String phoneNumber) {
+//        PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
+//        try {
+//            Phonenumber.PhoneNumber phone = phoneUtil.parse(phoneNumber, "NG");
+//            return phone.toString();
+//        } catch (NumberParseException e) {
+//            return phoneNumber;
+//
+//        }
+//    }
 }
 
